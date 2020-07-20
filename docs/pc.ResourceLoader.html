@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>pc.ResourceLoader | PlayCanvas API Reference</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/playcanvas-favicon.png">
+
+        <link href="styles/styles.css" rel="stylesheet">
+        <link href="styles/playcanvas-theme.css" rel="stylesheet">
+        <script src="scripts/interface.js"></script>
+        <script src="scripts/highlight.min.js"></script>
+
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+
+    <body>
+        <header>
+    <nav class="header-width">
+        <a href="/" class="header-title"><img src="images/playcanvas-manual.png"></a>
+        <ul class="header-menu">
+            <li class="user-manual"><a href="https://developer.playcanvas.com/en/user-manual/">User Manual</a></li>
+            <li class="tutorials"><a href="https://developer.playcanvas.com/en/tutorials">Tutorials</a></li>
+            <li class="forum"><a href="https://forum.playcanvas.com/" target="_blank">Forum</a></li>
+            <li class="api active"><a href="/api/">API Reference</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-content header-page header-width">
+        <h1><span class="font-icon">&#58195;</span>API Reference</h1>
+        <input id="search" class="search" type="text" placeholder="Search"></input>
+    </div>
+</header>
+        <div class="container content-width">
+            <nav class="sidebar">
+    <div class="sidebarFilter">
+        <input id="filter-input" type="text" placeholder="Filter">
+    </div>
+    <ul>
+        <li id="nav-pc"><a href="pc.html">pc</a></li>
+        <li id="nav-pc.callbacks"><a href="pc.callbacks.html">pc.callbacks</a></li>
+        <li id="nav-pc.guid"><a href="pc.guid.html">pc.guid</a></li>
+        <li id="nav-pc.math"><a href="pc.math.html">pc.math</a></li>
+        <li id="nav-pc.path"><a href="pc.path.html">pc.path</a></li>
+        <li id="nav-pc.platform"><a href="pc.platform.html">pc.platform</a></li>
+        <li id="nav-pc.script"><a href="pc.script.html">pc.script</a></li>
+        <li id="nav-pc.string"><a href="pc.string.html">pc.string</a></li>
+        <li id="nav-pc.Animation"><a href="pc.Animation.html">Animation</a></li>
+        <li id="nav-pc.AnimationComponent"><a href="pc.AnimationComponent.html">AnimationComponent</a></li>
+        <li id="nav-pc.AnimationComponentSystem"><a href="pc.AnimationComponentSystem.html">AnimationComponentSystem</a></li>
+        <li id="nav-pc.AnimationHandler"><a href="pc.AnimationHandler.html">AnimationHandler</a></li>
+        <li id="nav-pc.Application"><a href="pc.Application.html">Application</a></li>
+        <li id="nav-pc.Asset"><a href="pc.Asset.html">Asset</a></li>
+        <li id="nav-pc.AssetReference"><a href="pc.AssetReference.html">AssetReference</a></li>
+        <li id="nav-pc.AssetRegistry"><a href="pc.AssetRegistry.html">AssetRegistry</a></li>
+        <li id="nav-pc.AudioHandler"><a href="pc.AudioHandler.html">AudioHandler</a></li>
+        <li id="nav-pc.AudioListenerComponent"><a href="pc.AudioListenerComponent.html">AudioListenerComponent</a></li>
+        <li id="nav-pc.AudioListenerComponentSystem"><a href="pc.AudioListenerComponentSystem.html">AudioListenerComponentSystem</a></li>
+        <li id="nav-pc.BasicMaterial"><a href="pc.BasicMaterial.html">BasicMaterial</a></li>
+        <li id="nav-pc.BasisParser"><a href="pc.BasisParser.html">BasisParser</a></li>
+        <li id="nav-pc.Batch"><a href="pc.Batch.html">Batch</a></li>
+        <li id="nav-pc.BatchGroup"><a href="pc.BatchGroup.html">BatchGroup</a></li>
+        <li id="nav-pc.BatchManager"><a href="pc.BatchManager.html">BatchManager</a></li>
+        <li id="nav-pc.BoundingBox"><a href="pc.BoundingBox.html">BoundingBox</a></li>
+        <li id="nav-pc.BoundingSphere"><a href="pc.BoundingSphere.html">BoundingSphere</a></li>
+        <li id="nav-pc.ButtonComponent"><a href="pc.ButtonComponent.html">ButtonComponent</a></li>
+        <li id="nav-pc.ButtonComponentSystem"><a href="pc.ButtonComponentSystem.html">ButtonComponentSystem</a></li>
+        <li id="nav-pc.CameraComponent"><a href="pc.CameraComponent.html">CameraComponent</a></li>
+        <li id="nav-pc.CameraComponentSystem"><a href="pc.CameraComponentSystem.html">CameraComponentSystem</a></li>
+        <li id="nav-pc.CollisionComponent"><a href="pc.CollisionComponent.html">CollisionComponent</a></li>
+        <li id="nav-pc.CollisionComponentSystem"><a href="pc.CollisionComponentSystem.html">CollisionComponentSystem</a></li>
+        <li id="nav-pc.Color"><a href="pc.Color.html">Color</a></li>
+        <li id="nav-pc.Component"><a href="pc.Component.html">Component</a></li>
+        <li id="nav-pc.ComponentSystem"><a href="pc.ComponentSystem.html">ComponentSystem</a></li>
+        <li id="nav-pc.ComponentSystemRegistry"><a href="pc.ComponentSystemRegistry.html">ComponentSystemRegistry</a></li>
+        <li id="nav-pc.ContactPoint"><a href="pc.ContactPoint.html">ContactPoint</a></li>
+        <li id="nav-pc.ContactResult"><a href="pc.ContactResult.html">ContactResult</a></li>
+        <li id="nav-pc.ContainerHandler"><a href="pc.ContainerHandler.html">ContainerHandler</a></li>
+        <li id="nav-pc.ContainerResource"><a href="pc.ContainerResource.html">ContainerResource</a></li>
+        <li id="nav-pc.Controller"><a href="pc.Controller.html">Controller</a></li>
+        <li id="nav-pc.CubemapHandler"><a href="pc.CubemapHandler.html">CubemapHandler</a></li>
+        <li id="nav-pc.Curve"><a href="pc.Curve.html">Curve</a></li>
+        <li id="nav-pc.CurveSet"><a href="pc.CurveSet.html">CurveSet</a></li>
+        <li id="nav-pc.DdsParser"><a href="pc.DdsParser.html">DdsParser</a></li>
+        <li id="nav-pc.ElementComponent"><a href="pc.ElementComponent.html">ElementComponent</a></li>
+        <li id="nav-pc.ElementComponentSystem"><a href="pc.ElementComponentSystem.html">ElementComponentSystem</a></li>
+        <li id="nav-pc.ElementDragHelper"><a href="pc.ElementDragHelper.html">ElementDragHelper</a></li>
+        <li id="nav-pc.ElementInput"><a href="pc.ElementInput.html">ElementInput</a></li>
+        <li id="nav-pc.ElementInputEvent"><a href="pc.ElementInputEvent.html">ElementInputEvent</a></li>
+        <li id="nav-pc.ElementMouseEvent"><a href="pc.ElementMouseEvent.html">ElementMouseEvent</a></li>
+        <li id="nav-pc.ElementSelectEvent"><a href="pc.ElementSelectEvent.html">ElementSelectEvent</a></li>
+        <li id="nav-pc.ElementTouchEvent"><a href="pc.ElementTouchEvent.html">ElementTouchEvent</a></li>
+        <li id="nav-pc.Entity"><a href="pc.Entity.html">Entity</a></li>
+        <li id="nav-pc.EventHandler"><a href="pc.EventHandler.html">EventHandler</a></li>
+        <li id="nav-pc.Font"><a href="pc.Font.html">Font</a></li>
+        <li id="nav-pc.FontHandler"><a href="pc.FontHandler.html">FontHandler</a></li>
+        <li id="nav-pc.ForwardRenderer"><a href="pc.ForwardRenderer.html">ForwardRenderer</a></li>
+        <li id="nav-pc.Frustum"><a href="pc.Frustum.html">Frustum</a></li>
+        <li id="nav-pc.GamePads"><a href="pc.GamePads.html">GamePads</a></li>
+        <li id="nav-pc.GraphicsDevice"><a href="pc.GraphicsDevice.html">GraphicsDevice</a></li>
+        <li id="nav-pc.GraphNode"><a href="pc.GraphNode.html">GraphNode</a></li>
+        <li id="nav-pc.Http"><a href="pc.Http.html">Http</a></li>
+        <li id="nav-pc.I18n"><a href="pc.I18n.html">I18n</a></li>
+        <li id="nav-pc.ImgParser"><a href="pc.ImgParser.html">ImgParser</a></li>
+        <li id="nav-pc.IndexBuffer"><a href="pc.IndexBuffer.html">IndexBuffer</a></li>
+        <li id="nav-pc.Keyboard"><a href="pc.Keyboard.html">Keyboard</a></li>
+        <li id="nav-pc.KeyboardEvent"><a href="pc.KeyboardEvent.html">KeyboardEvent</a></li>
+        <li id="nav-pc.KtxParser"><a href="pc.KtxParser.html">KtxParser</a></li>
+        <li id="nav-pc.Layer"><a href="pc.Layer.html">Layer</a></li>
+        <li id="nav-pc.LayerComposition"><a href="pc.LayerComposition.html">LayerComposition</a></li>
+        <li id="nav-pc.LayoutChildComponent"><a href="pc.LayoutChildComponent.html">LayoutChildComponent</a></li>
+        <li id="nav-pc.LayoutChildComponentSystem"><a href="pc.LayoutChildComponentSystem.html">LayoutChildComponentSystem</a></li>
+        <li id="nav-pc.LayoutGroupComponent"><a href="pc.LayoutGroupComponent.html">LayoutGroupComponent</a></li>
+        <li id="nav-pc.LayoutGroupComponentSystem"><a href="pc.LayoutGroupComponentSystem.html">LayoutGroupComponentSystem</a></li>
+        <li id="nav-pc.LegacyDdsParser"><a href="pc.LegacyDdsParser.html">LegacyDdsParser</a></li>
+        <li id="nav-pc.LightComponent"><a href="pc.LightComponent.html">LightComponent</a></li>
+        <li id="nav-pc.LightComponentSystem"><a href="pc.LightComponentSystem.html">LightComponentSystem</a></li>
+        <li id="nav-pc.Lightmapper"><a href="pc.Lightmapper.html">Lightmapper</a></li>
+        <li id="nav-pc.Mat3"><a href="pc.Mat3.html">Mat3</a></li>
+        <li id="nav-pc.Mat4"><a href="pc.Mat4.html">Mat4</a></li>
+        <li id="nav-pc.Material"><a href="pc.Material.html">Material</a></li>
+        <li id="nav-pc.MaterialHandler"><a href="pc.MaterialHandler.html">MaterialHandler</a></li>
+        <li id="nav-pc.Mesh"><a href="pc.Mesh.html">Mesh</a></li>
+        <li id="nav-pc.MeshInstance"><a href="pc.MeshInstance.html">MeshInstance</a></li>
+        <li id="nav-pc.Model"><a href="pc.Model.html">Model</a></li>
+        <li id="nav-pc.ModelComponent"><a href="pc.ModelComponent.html">ModelComponent</a></li>
+        <li id="nav-pc.ModelComponentSystem"><a href="pc.ModelComponentSystem.html">ModelComponentSystem</a></li>
+        <li id="nav-pc.ModelHandler"><a href="pc.ModelHandler.html">ModelHandler</a></li>
+        <li id="nav-pc.Morph"><a href="pc.Morph.html">Morph</a></li>
+        <li id="nav-pc.MorphInstance"><a href="pc.MorphInstance.html">MorphInstance</a></li>
+        <li id="nav-pc.MorphTarget"><a href="pc.MorphTarget.html">MorphTarget</a></li>
+        <li id="nav-pc.Mouse"><a href="pc.Mouse.html">Mouse</a></li>
+        <li id="nav-pc.MouseEvent"><a href="pc.MouseEvent.html">MouseEvent</a></li>
+        <li id="nav-pc.Node"><a href="pc.Node.html">Node</a></li>
+        <li id="nav-pc.OrientedBox"><a href="pc.OrientedBox.html">OrientedBox</a></li>
+        <li id="nav-pc.ParticleSystemComponent"><a href="pc.ParticleSystemComponent.html">ParticleSystemComponent</a></li>
+        <li id="nav-pc.ParticleSystemComponentSystem"><a href="pc.ParticleSystemComponentSystem.html">ParticleSystemComponentSystem</a></li>
+        <li id="nav-pc.Picker"><a href="pc.Picker.html">Picker</a></li>
+        <li id="nav-pc.PostEffect"><a href="pc.PostEffect.html">PostEffect</a></li>
+        <li id="nav-pc.PostEffectQueue"><a href="pc.PostEffectQueue.html">PostEffectQueue</a></li>
+        <li id="nav-pc.Quat"><a href="pc.Quat.html">Quat</a></li>
+        <li id="nav-pc.Ray"><a href="pc.Ray.html">Ray</a></li>
+        <li id="nav-pc.RaycastResult"><a href="pc.RaycastResult.html">RaycastResult</a></li>
+        <li id="nav-pc.RenderTarget"><a href="pc.RenderTarget.html">RenderTarget</a></li>
+        <li id="nav-pc.ResourceHandler"><a href="pc.ResourceHandler.html">ResourceHandler</a></li>
+        <li id="nav-pc.ResourceLoader"><a href="pc.ResourceLoader.html">ResourceLoader</a></li>
+        <li id="nav-pc.RigidBodyComponent"><a href="pc.RigidBodyComponent.html">RigidBodyComponent</a></li>
+        <li id="nav-pc.RigidBodyComponentSystem"><a href="pc.RigidBodyComponentSystem.html">RigidBodyComponentSystem</a></li>
+        <li id="nav-pc.Scene"><a href="pc.Scene.html">Scene</a></li>
+        <li id="nav-pc.SceneHandler"><a href="pc.SceneHandler.html">SceneHandler</a></li>
+        <li id="nav-pc.SceneRegistry"><a href="pc.SceneRegistry.html">SceneRegistry</a></li>
+        <li id="nav-pc.SceneRegistryItem"><a href="pc.SceneRegistryItem.html">SceneRegistryItem</a></li>
+        <li id="nav-pc.ScopeId"><a href="pc.ScopeId.html">ScopeId</a></li>
+        <li id="nav-pc.ScopeSpace"><a href="pc.ScopeSpace.html">ScopeSpace</a></li>
+        <li id="nav-pc.ScreenComponent"><a href="pc.ScreenComponent.html">ScreenComponent</a></li>
+        <li id="nav-pc.ScreenComponentSystem"><a href="pc.ScreenComponentSystem.html">ScreenComponentSystem</a></li>
+        <li id="nav-pc.ScriptAttributes"><a href="pc.ScriptAttributes.html">ScriptAttributes</a></li>
+        <li id="nav-pc.ScriptComponent"><a href="pc.ScriptComponent.html">ScriptComponent</a></li>
+        <li id="nav-pc.ScriptComponentSystem"><a href="pc.ScriptComponentSystem.html">ScriptComponentSystem</a></li>
+        <li id="nav-pc.ScriptHandler"><a href="pc.ScriptHandler.html">ScriptHandler</a></li>
+        <li id="nav-pc.ScriptRegistry"><a href="pc.ScriptRegistry.html">ScriptRegistry</a></li>
+        <li id="nav-pc.ScriptType"><a href="pc.ScriptType.html">ScriptType</a></li>
+        <li id="nav-pc.ScrollbarComponent"><a href="pc.ScrollbarComponent.html">ScrollbarComponent</a></li>
+        <li id="nav-pc.ScrollbarComponentSystem"><a href="pc.ScrollbarComponentSystem.html">ScrollbarComponentSystem</a></li>
+        <li id="nav-pc.ScrollViewComponent"><a href="pc.ScrollViewComponent.html">ScrollViewComponent</a></li>
+        <li id="nav-pc.ScrollViewComponentSystem"><a href="pc.ScrollViewComponentSystem.html">ScrollViewComponentSystem</a></li>
+        <li id="nav-pc.Shader"><a href="pc.Shader.html">Shader</a></li>
+        <li id="nav-pc.SingleContactResult"><a href="pc.SingleContactResult.html">SingleContactResult</a></li>
+        <li id="nav-pc.Skeleton"><a href="pc.Skeleton.html">Skeleton</a></li>
+        <li id="nav-pc.Skin"><a href="pc.Skin.html">Skin</a></li>
+        <li id="nav-pc.SkinInstance"><a href="pc.SkinInstance.html">SkinInstance</a></li>
+        <li id="nav-pc.Sound"><a href="pc.Sound.html">Sound</a></li>
+        <li id="nav-pc.SoundComponent"><a href="pc.SoundComponent.html">SoundComponent</a></li>
+        <li id="nav-pc.SoundComponentSystem"><a href="pc.SoundComponentSystem.html">SoundComponentSystem</a></li>
+        <li id="nav-pc.SoundInstance"><a href="pc.SoundInstance.html">SoundInstance</a></li>
+        <li id="nav-pc.SoundInstance3d"><a href="pc.SoundInstance3d.html">SoundInstance3d</a></li>
+        <li id="nav-pc.SoundManager"><a href="pc.SoundManager.html">SoundManager</a></li>
+        <li id="nav-pc.SoundSlot"><a href="pc.SoundSlot.html">SoundSlot</a></li>
+        <li id="nav-pc.Sprite"><a href="pc.Sprite.html">Sprite</a></li>
+        <li id="nav-pc.SpriteAnimationClip"><a href="pc.SpriteAnimationClip.html">SpriteAnimationClip</a></li>
+        <li id="nav-pc.SpriteComponent"><a href="pc.SpriteComponent.html">SpriteComponent</a></li>
+        <li id="nav-pc.SpriteComponentSystem"><a href="pc.SpriteComponentSystem.html">SpriteComponentSystem</a></li>
+        <li id="nav-pc.SpriteHandler"><a href="pc.SpriteHandler.html">SpriteHandler</a></li>
+        <li id="nav-pc.StandardMaterial"><a href="pc.StandardMaterial.html">StandardMaterial</a></li>
+        <li id="nav-pc.StencilParameters"><a href="pc.StencilParameters.html">StencilParameters</a></li>
+        <li id="nav-pc.Tags"><a href="pc.Tags.html">Tags</a></li>
+        <li id="nav-pc.Texture"><a href="pc.Texture.html">Texture</a></li>
+        <li id="nav-pc.TextureAtlas"><a href="pc.TextureAtlas.html">TextureAtlas</a></li>
+        <li id="nav-pc.TextureAtlasHandler"><a href="pc.TextureAtlasHandler.html">TextureAtlasHandler</a></li>
+        <li id="nav-pc.TextureHandler"><a href="pc.TextureHandler.html">TextureHandler</a></li>
+        <li id="nav-pc.TextureParser"><a href="pc.TextureParser.html">TextureParser</a></li>
+        <li id="nav-pc.Touch"><a href="pc.Touch.html">Touch</a></li>
+        <li id="nav-pc.TouchDevice"><a href="pc.TouchDevice.html">TouchDevice</a></li>
+        <li id="nav-pc.TouchEvent"><a href="pc.TouchEvent.html">TouchEvent</a></li>
+        <li id="nav-pc.TransformFeedback"><a href="pc.TransformFeedback.html">TransformFeedback</a></li>
+        <li id="nav-pc.Vec2"><a href="pc.Vec2.html">Vec2</a></li>
+        <li id="nav-pc.Vec3"><a href="pc.Vec3.html">Vec3</a></li>
+        <li id="nav-pc.Vec4"><a href="pc.Vec4.html">Vec4</a></li>
+        <li id="nav-pc.VertexBuffer"><a href="pc.VertexBuffer.html">VertexBuffer</a></li>
+        <li id="nav-pc.VertexFormat"><a href="pc.VertexFormat.html">VertexFormat</a></li>
+        <li id="nav-pc.VertexIterator"><a href="pc.VertexIterator.html">VertexIterator</a></li>
+        <li id="nav-pc.VertexIteratorAccessor"><a href="pc.VertexIteratorAccessor.html">VertexIteratorAccessor</a></li>
+        <li id="nav-pc.XrHitTest"><a href="pc.XrHitTest.html">XrHitTest</a></li>
+        <li id="nav-pc.XrHitTestSource"><a href="pc.XrHitTestSource.html">XrHitTestSource</a></li>
+        <li id="nav-pc.XrInput"><a href="pc.XrInput.html">XrInput</a></li>
+        <li id="nav-pc.XrInputSource"><a href="pc.XrInputSource.html">XrInputSource</a></li>
+        <li id="nav-pc.XrLightEstimation"><a href="pc.XrLightEstimation.html">XrLightEstimation</a></li>
+        <li id="nav-pc.XrManager"><a href="pc.XrManager.html">XrManager</a></li>
+    </ul>
+</nav>
+<div class='sidebarToggle'><span></span>Class List</div>
+            <main class="cls">
+    <h1>pc.ResourceLoader</h1>
+    <p><p>Load resource data, potentially from remote sources. Caches resource on load to prevent
+multiple requests. Add ResourceHandlers to handle different types of resources.</p></p>
+
+    <!-- summary -->
+    <h1>Summary</h1>
+
+    <!--type definitions-->
+
+    <!--static properties-->
+
+    <!--static methods-->
+
+    <!--properties-->
+
+    <!--methods-->
+    <h3>Methods</h3>
+    <table class="properties">
+    <tr>
+        <td><a href="#addHandler">addHandler</a></td><td><p>Add a <a href="pc.ResourceHandler.html">pc.ResourceHandler</a> for a resource type.</td>
+    </tr>
+    <tr>
+        <td><a href="#clearCache">clearCache</a></td><td><p>Remove resource from cache.</td>
+    </tr>
+    <tr>
+        <td><a href="#destroy">destroy</a></td><td><p>Destroys the resource loader.</td>
+    </tr>
+    <tr>
+        <td><a href="#getFromCache">getFromCache</a></td><td><p>Check cache for resource from a URL.</td>
+    </tr>
+    <tr>
+        <td><a href="#getHandler">getHandler</a></td><td><p>Get a <a href="pc.ResourceHandler.html">pc.ResourceHandler</a> for a resource type.</td>
+    </tr>
+    <tr>
+        <td><a href="#load">load</a></td><td><p>Make a request for a resource from a remote URL.</td>
+    </tr>
+    <tr>
+        <td><a href="#open">open</a></td><td><p>Convert raw resource data into a resource instance.</td>
+    </tr>
+    <tr>
+        <td><a href="#patch">patch</a></td><td><p>Perform any operations on a resource, that requires a dependency on its asset data
+or any other asset data.</td>
+    </tr>
+    <tr>
+        <td><a href="#removeHandler">removeHandler</a></td><td><p>Remove a <a href="pc.ResourceHandler.html">pc.ResourceHandler</a> for a resource type.</td>
+    </tr>
+    </table>
+
+    <!--events-->
+
+
+    <h1>Details</h1>
+
+    <!--type definitions-->
+
+    <!--static members-->
+
+    <!--static methods-->
+
+    <h2>Constructor</h2>
+    <!-- Constructor -->
+    <div id="ResourceLoader">
+    <h3 class="methodname">ResourceLoader(app) <a class="font-icon" href="#ResourceLoader">&#58216;</a></h3>
+    <p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>app</td><td><a href="pc.Application.html">pc.Application</a></td><td><p>The application.</p></td>
+        </tr>
+    </table>
+
+</div>
+
+    <!--properties-->
+
+    <!--methods-->
+    <h2>Methods</h2>
+        <div id="addHandler">
+    <h3 class="methodname">addHandler(type, handler) <a class="font-icon" href="#addHandler">&#58216;</a></h3>
+    <p><p>Add a <a href="pc.ResourceHandler.html">pc.ResourceHandler</a> for a resource type. Handler should support atleast load() and open().
+Handlers can optionally support patch(asset, assets) to handle dependencies on other assets.</p></p>
+    <pre><code class="javascript">var loader = new ResourceLoader();loader.addHandler("json", new pc.JsonHandler());</code></pre>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>type</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>The name of the resource type that the handler will be registerd with. Can be:</p>
+<ul>
+<li><a href="pc.html#ASSET_ANIMATION">pc.ASSET_ANIMATION</a></li>
+<li><a href="pc.html#ASSET_AUDIO">pc.ASSET_AUDIO</a></li>
+<li><a href="pc.html#ASSET_IMAGE">pc.ASSET_IMAGE</a></li>
+<li><a href="pc.html#ASSET_JSON">pc.ASSET_JSON</a></li>
+<li><a href="pc.html#ASSET_MODEL">pc.ASSET_MODEL</a></li>
+<li><a href="pc.html#ASSET_MATERIAL">pc.ASSET_MATERIAL</a></li>
+<li><a href="pc.html#ASSET_TEXT">pc.ASSET_TEXT</a></li>
+<li><a href="pc.html#ASSET_TEXTURE">pc.ASSET_TEXTURE</a></li>
+<li><a href="pc.html#ASSET_CUBEMAP">pc.ASSET_CUBEMAP</a></li>
+<li><a href="pc.html#ASSET_SHADER">pc.ASSET_SHADER</a></li>
+<li><a href="pc.html#ASSET_CSS">pc.ASSET_CSS</a></li>
+<li><a href="pc.html#ASSET_HTML">pc.ASSET_HTML</a></li>
+<li><a href="pc.html#ASSET_SCRIPT">pc.ASSET_SCRIPT</a></li>
+<li><a href="pc.html#ASSET_CONTAINER">pc.ASSET_CONTAINER</a></li>
+</ul></td>
+        </tr>
+        <tr>
+            <td>handler</td><td><a href="pc.ResourceHandler.html">pc.ResourceHandler</a></td><td><p>An instance of a resource handler supporting atleast load() and open().</p></td>
+        </tr>
+    </table>
+
+</div>
+        <div id="clearCache">
+    <h3 class="methodname">clearCache(url, type) <a class="font-icon" href="#clearCache">&#58216;</a></h3>
+    <p><p>Remove resource from cache.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>url</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>The URL of the resource.</p></td>
+        </tr>
+        <tr>
+            <td>type</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>The type of resource.</p></td>
+        </tr>
+    </table>
+
+</div>
+        <div id="destroy">
+    <h3 class="methodname">destroy() <a class="font-icon" href="#destroy">&#58216;</a></h3>
+    <p><p>Destroys the resource loader.</p></p>
+
+
+</div>
+        <div id="getFromCache">
+    <h3 class="methodname">getFromCache(url, type) <a class="font-icon" href="#getFromCache">&#58216;</a></h3>
+    <p><p>Check cache for resource from a URL. If present, return the cached value.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>url</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>The URL of the resource to get from the cache.</p></td>
+        </tr>
+        <tr>
+            <td>type</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>The type of the resource.</p></td>
+        </tr>
+    </table>
+
+    <h4>Returns</h4>
+    <a href="#">*</a> <p>The resource loaded from the cache.</p>
+</div>
+        <div id="getHandler">
+    <h3 class="methodname">getHandler(type) <a class="font-icon" href="#getHandler">&#58216;</a></h3>
+    <p><p>Get a <a href="pc.ResourceHandler.html">pc.ResourceHandler</a> for a resource type.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>type</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>The name of the resource type that the handler is registerd with.</p></td>
+        </tr>
+    </table>
+
+    <h4>Returns</h4>
+    <a href="pc.ResourceHandler.html">pc.ResourceHandler</a> <p>The registerd handler.</p>
+</div>
+        <div id="load">
+    <h3 class="methodname">load(url, type, callback, [asset]) <a class="font-icon" href="#load">&#58216;</a></h3>
+    <p><p>Make a request for a resource from a remote URL. Parse the returned data using the
+handler for the specified type. When loaded and parsed, use the callback to return an instance of
+the resource.</p></p>
+    <pre><code class="javascript">app.loader.load("../path/to/texture.png", "texture", function (err, texture) {    // use texture here});</code></pre>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>url</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>The URL of the resource to load.</p></td>
+        </tr>
+        <tr>
+            <td>type</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>The type of resource expected.</p></td>
+        </tr>
+        <tr>
+            <td>callback</td><td><a href="pc.callbacks.html#ResourceLoader">pc.callbacks.ResourceLoader</a></td><td><p>The callback used when the resource is loaded or an error occurs.</p></td>
+        </tr>
+        <tr>
+            <td>asset</td><td><a href="pc.Asset.html">pc.Asset</a></td><td><p>Optional asset that is passed into handler
+Passed (err, resource) where err is null if there are no errors.</p></td>
+        </tr>
+    </table>
+
+</div>
+        <div id="open">
+    <h3 class="methodname">open(type, data) <a class="font-icon" href="#open">&#58216;</a></h3>
+    <p><p>Convert raw resource data into a resource instance. E.g. Take 3D model format JSON and return a pc.Model.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>type</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>The type of resource.</p></td>
+        </tr>
+        <tr>
+            <td>data</td><td><a href="#">*</a></td><td><p>The raw resource data.</p></td>
+        </tr>
+    </table>
+
+    <h4>Returns</h4>
+    <a href="#">*</a> <p>The parsed resource data.</p>
+</div>
+        <div id="patch">
+    <h3 class="methodname">patch(asset, assets) <a class="font-icon" href="#patch">&#58216;</a></h3>
+    <p><p>Perform any operations on a resource, that requires a dependency on its asset data
+or any other asset data.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>asset</td><td><a href="pc.Asset.html">pc.Asset</a></td><td><p>The asset to patch.</p></td>
+        </tr>
+        <tr>
+            <td>assets</td><td><a href="pc.AssetRegistry.html">pc.AssetRegistry</a></td><td><p>The asset registry.</p></td>
+        </tr>
+    </table>
+
+</div>
+        <div id="removeHandler">
+    <h3 class="methodname">removeHandler(type) <a class="font-icon" href="#removeHandler">&#58216;</a></h3>
+    <p><p>Remove a <a href="pc.ResourceHandler.html">pc.ResourceHandler</a> for a resource type.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>type</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>The name of the type that the handler will be removed.</p></td>
+        </tr>
+    </table>
+
+</div>
+
+    <!--events-->
+
+</main>
+        </div>
+
+            </body>
+
+</html>

@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>pc.Tags | PlayCanvas API Reference</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/playcanvas-favicon.png">
+
+        <link href="styles/styles.css" rel="stylesheet">
+        <link href="styles/playcanvas-theme.css" rel="stylesheet">
+        <script src="scripts/interface.js"></script>
+        <script src="scripts/highlight.min.js"></script>
+
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+
+    <body>
+        <header>
+    <nav class="header-width">
+        <a href="/" class="header-title"><img src="images/playcanvas-manual.png"></a>
+        <ul class="header-menu">
+            <li class="user-manual"><a href="https://developer.playcanvas.com/en/user-manual/">User Manual</a></li>
+            <li class="tutorials"><a href="https://developer.playcanvas.com/en/tutorials">Tutorials</a></li>
+            <li class="forum"><a href="https://forum.playcanvas.com/" target="_blank">Forum</a></li>
+            <li class="api active"><a href="/api/">API Reference</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-content header-page header-width">
+        <h1><span class="font-icon">&#58195;</span>API Reference</h1>
+        <input id="search" class="search" type="text" placeholder="Search"></input>
+    </div>
+</header>
+        <div class="container content-width">
+            <nav class="sidebar">
+    <div class="sidebarFilter">
+        <input id="filter-input" type="text" placeholder="Filter">
+    </div>
+    <ul>
+        <li id="nav-pc"><a href="pc.html">pc</a></li>
+        <li id="nav-pc.callbacks"><a href="pc.callbacks.html">pc.callbacks</a></li>
+        <li id="nav-pc.guid"><a href="pc.guid.html">pc.guid</a></li>
+        <li id="nav-pc.math"><a href="pc.math.html">pc.math</a></li>
+        <li id="nav-pc.path"><a href="pc.path.html">pc.path</a></li>
+        <li id="nav-pc.platform"><a href="pc.platform.html">pc.platform</a></li>
+        <li id="nav-pc.script"><a href="pc.script.html">pc.script</a></li>
+        <li id="nav-pc.string"><a href="pc.string.html">pc.string</a></li>
+        <li id="nav-pc.Animation"><a href="pc.Animation.html">Animation</a></li>
+        <li id="nav-pc.AnimationComponent"><a href="pc.AnimationComponent.html">AnimationComponent</a></li>
+        <li id="nav-pc.AnimationComponentSystem"><a href="pc.AnimationComponentSystem.html">AnimationComponentSystem</a></li>
+        <li id="nav-pc.AnimationHandler"><a href="pc.AnimationHandler.html">AnimationHandler</a></li>
+        <li id="nav-pc.Application"><a href="pc.Application.html">Application</a></li>
+        <li id="nav-pc.Asset"><a href="pc.Asset.html">Asset</a></li>
+        <li id="nav-pc.AssetReference"><a href="pc.AssetReference.html">AssetReference</a></li>
+        <li id="nav-pc.AssetRegistry"><a href="pc.AssetRegistry.html">AssetRegistry</a></li>
+        <li id="nav-pc.AudioHandler"><a href="pc.AudioHandler.html">AudioHandler</a></li>
+        <li id="nav-pc.AudioListenerComponent"><a href="pc.AudioListenerComponent.html">AudioListenerComponent</a></li>
+        <li id="nav-pc.AudioListenerComponentSystem"><a href="pc.AudioListenerComponentSystem.html">AudioListenerComponentSystem</a></li>
+        <li id="nav-pc.BasicMaterial"><a href="pc.BasicMaterial.html">BasicMaterial</a></li>
+        <li id="nav-pc.BasisParser"><a href="pc.BasisParser.html">BasisParser</a></li>
+        <li id="nav-pc.Batch"><a href="pc.Batch.html">Batch</a></li>
+        <li id="nav-pc.BatchGroup"><a href="pc.BatchGroup.html">BatchGroup</a></li>
+        <li id="nav-pc.BatchManager"><a href="pc.BatchManager.html">BatchManager</a></li>
+        <li id="nav-pc.BoundingBox"><a href="pc.BoundingBox.html">BoundingBox</a></li>
+        <li id="nav-pc.BoundingSphere"><a href="pc.BoundingSphere.html">BoundingSphere</a></li>
+        <li id="nav-pc.ButtonComponent"><a href="pc.ButtonComponent.html">ButtonComponent</a></li>
+        <li id="nav-pc.ButtonComponentSystem"><a href="pc.ButtonComponentSystem.html">ButtonComponentSystem</a></li>
+        <li id="nav-pc.CameraComponent"><a href="pc.CameraComponent.html">CameraComponent</a></li>
+        <li id="nav-pc.CameraComponentSystem"><a href="pc.CameraComponentSystem.html">CameraComponentSystem</a></li>
+        <li id="nav-pc.CollisionComponent"><a href="pc.CollisionComponent.html">CollisionComponent</a></li>
+        <li id="nav-pc.CollisionComponentSystem"><a href="pc.CollisionComponentSystem.html">CollisionComponentSystem</a></li>
+        <li id="nav-pc.Color"><a href="pc.Color.html">Color</a></li>
+        <li id="nav-pc.Component"><a href="pc.Component.html">Component</a></li>
+        <li id="nav-pc.ComponentSystem"><a href="pc.ComponentSystem.html">ComponentSystem</a></li>
+        <li id="nav-pc.ComponentSystemRegistry"><a href="pc.ComponentSystemRegistry.html">ComponentSystemRegistry</a></li>
+        <li id="nav-pc.ContactPoint"><a href="pc.ContactPoint.html">ContactPoint</a></li>
+        <li id="nav-pc.ContactResult"><a href="pc.ContactResult.html">ContactResult</a></li>
+        <li id="nav-pc.ContainerHandler"><a href="pc.ContainerHandler.html">ContainerHandler</a></li>
+        <li id="nav-pc.ContainerResource"><a href="pc.ContainerResource.html">ContainerResource</a></li>
+        <li id="nav-pc.Controller"><a href="pc.Controller.html">Controller</a></li>
+        <li id="nav-pc.CubemapHandler"><a href="pc.CubemapHandler.html">CubemapHandler</a></li>
+        <li id="nav-pc.Curve"><a href="pc.Curve.html">Curve</a></li>
+        <li id="nav-pc.CurveSet"><a href="pc.CurveSet.html">CurveSet</a></li>
+        <li id="nav-pc.DdsParser"><a href="pc.DdsParser.html">DdsParser</a></li>
+        <li id="nav-pc.ElementComponent"><a href="pc.ElementComponent.html">ElementComponent</a></li>
+        <li id="nav-pc.ElementComponentSystem"><a href="pc.ElementComponentSystem.html">ElementComponentSystem</a></li>
+        <li id="nav-pc.ElementDragHelper"><a href="pc.ElementDragHelper.html">ElementDragHelper</a></li>
+        <li id="nav-pc.ElementInput"><a href="pc.ElementInput.html">ElementInput</a></li>
+        <li id="nav-pc.ElementInputEvent"><a href="pc.ElementInputEvent.html">ElementInputEvent</a></li>
+        <li id="nav-pc.ElementMouseEvent"><a href="pc.ElementMouseEvent.html">ElementMouseEvent</a></li>
+        <li id="nav-pc.ElementSelectEvent"><a href="pc.ElementSelectEvent.html">ElementSelectEvent</a></li>
+        <li id="nav-pc.ElementTouchEvent"><a href="pc.ElementTouchEvent.html">ElementTouchEvent</a></li>
+        <li id="nav-pc.Entity"><a href="pc.Entity.html">Entity</a></li>
+        <li id="nav-pc.EventHandler"><a href="pc.EventHandler.html">EventHandler</a></li>
+        <li id="nav-pc.Font"><a href="pc.Font.html">Font</a></li>
+        <li id="nav-pc.FontHandler"><a href="pc.FontHandler.html">FontHandler</a></li>
+        <li id="nav-pc.ForwardRenderer"><a href="pc.ForwardRenderer.html">ForwardRenderer</a></li>
+        <li id="nav-pc.Frustum"><a href="pc.Frustum.html">Frustum</a></li>
+        <li id="nav-pc.GamePads"><a href="pc.GamePads.html">GamePads</a></li>
+        <li id="nav-pc.GraphicsDevice"><a href="pc.GraphicsDevice.html">GraphicsDevice</a></li>
+        <li id="nav-pc.GraphNode"><a href="pc.GraphNode.html">GraphNode</a></li>
+        <li id="nav-pc.Http"><a href="pc.Http.html">Http</a></li>
+        <li id="nav-pc.I18n"><a href="pc.I18n.html">I18n</a></li>
+        <li id="nav-pc.ImgParser"><a href="pc.ImgParser.html">ImgParser</a></li>
+        <li id="nav-pc.IndexBuffer"><a href="pc.IndexBuffer.html">IndexBuffer</a></li>
+        <li id="nav-pc.Keyboard"><a href="pc.Keyboard.html">Keyboard</a></li>
+        <li id="nav-pc.KeyboardEvent"><a href="pc.KeyboardEvent.html">KeyboardEvent</a></li>
+        <li id="nav-pc.KtxParser"><a href="pc.KtxParser.html">KtxParser</a></li>
+        <li id="nav-pc.Layer"><a href="pc.Layer.html">Layer</a></li>
+        <li id="nav-pc.LayerComposition"><a href="pc.LayerComposition.html">LayerComposition</a></li>
+        <li id="nav-pc.LayoutChildComponent"><a href="pc.LayoutChildComponent.html">LayoutChildComponent</a></li>
+        <li id="nav-pc.LayoutChildComponentSystem"><a href="pc.LayoutChildComponentSystem.html">LayoutChildComponentSystem</a></li>
+        <li id="nav-pc.LayoutGroupComponent"><a href="pc.LayoutGroupComponent.html">LayoutGroupComponent</a></li>
+        <li id="nav-pc.LayoutGroupComponentSystem"><a href="pc.LayoutGroupComponentSystem.html">LayoutGroupComponentSystem</a></li>
+        <li id="nav-pc.LegacyDdsParser"><a href="pc.LegacyDdsParser.html">LegacyDdsParser</a></li>
+        <li id="nav-pc.LightComponent"><a href="pc.LightComponent.html">LightComponent</a></li>
+        <li id="nav-pc.LightComponentSystem"><a href="pc.LightComponentSystem.html">LightComponentSystem</a></li>
+        <li id="nav-pc.Lightmapper"><a href="pc.Lightmapper.html">Lightmapper</a></li>
+        <li id="nav-pc.Mat3"><a href="pc.Mat3.html">Mat3</a></li>
+        <li id="nav-pc.Mat4"><a href="pc.Mat4.html">Mat4</a></li>
+        <li id="nav-pc.Material"><a href="pc.Material.html">Material</a></li>
+        <li id="nav-pc.MaterialHandler"><a href="pc.MaterialHandler.html">MaterialHandler</a></li>
+        <li id="nav-pc.Mesh"><a href="pc.Mesh.html">Mesh</a></li>
+        <li id="nav-pc.MeshInstance"><a href="pc.MeshInstance.html">MeshInstance</a></li>
+        <li id="nav-pc.Model"><a href="pc.Model.html">Model</a></li>
+        <li id="nav-pc.ModelComponent"><a href="pc.ModelComponent.html">ModelComponent</a></li>
+        <li id="nav-pc.ModelComponentSystem"><a href="pc.ModelComponentSystem.html">ModelComponentSystem</a></li>
+        <li id="nav-pc.ModelHandler"><a href="pc.ModelHandler.html">ModelHandler</a></li>
+        <li id="nav-pc.Morph"><a href="pc.Morph.html">Morph</a></li>
+        <li id="nav-pc.MorphInstance"><a href="pc.MorphInstance.html">MorphInstance</a></li>
+        <li id="nav-pc.MorphTarget"><a href="pc.MorphTarget.html">MorphTarget</a></li>
+        <li id="nav-pc.Mouse"><a href="pc.Mouse.html">Mouse</a></li>
+        <li id="nav-pc.MouseEvent"><a href="pc.MouseEvent.html">MouseEvent</a></li>
+        <li id="nav-pc.Node"><a href="pc.Node.html">Node</a></li>
+        <li id="nav-pc.OrientedBox"><a href="pc.OrientedBox.html">OrientedBox</a></li>
+        <li id="nav-pc.ParticleSystemComponent"><a href="pc.ParticleSystemComponent.html">ParticleSystemComponent</a></li>
+        <li id="nav-pc.ParticleSystemComponentSystem"><a href="pc.ParticleSystemComponentSystem.html">ParticleSystemComponentSystem</a></li>
+        <li id="nav-pc.Picker"><a href="pc.Picker.html">Picker</a></li>
+        <li id="nav-pc.PostEffect"><a href="pc.PostEffect.html">PostEffect</a></li>
+        <li id="nav-pc.PostEffectQueue"><a href="pc.PostEffectQueue.html">PostEffectQueue</a></li>
+        <li id="nav-pc.Quat"><a href="pc.Quat.html">Quat</a></li>
+        <li id="nav-pc.Ray"><a href="pc.Ray.html">Ray</a></li>
+        <li id="nav-pc.RaycastResult"><a href="pc.RaycastResult.html">RaycastResult</a></li>
+        <li id="nav-pc.RenderTarget"><a href="pc.RenderTarget.html">RenderTarget</a></li>
+        <li id="nav-pc.ResourceHandler"><a href="pc.ResourceHandler.html">ResourceHandler</a></li>
+        <li id="nav-pc.ResourceLoader"><a href="pc.ResourceLoader.html">ResourceLoader</a></li>
+        <li id="nav-pc.RigidBodyComponent"><a href="pc.RigidBodyComponent.html">RigidBodyComponent</a></li>
+        <li id="nav-pc.RigidBodyComponentSystem"><a href="pc.RigidBodyComponentSystem.html">RigidBodyComponentSystem</a></li>
+        <li id="nav-pc.Scene"><a href="pc.Scene.html">Scene</a></li>
+        <li id="nav-pc.SceneHandler"><a href="pc.SceneHandler.html">SceneHandler</a></li>
+        <li id="nav-pc.SceneRegistry"><a href="pc.SceneRegistry.html">SceneRegistry</a></li>
+        <li id="nav-pc.SceneRegistryItem"><a href="pc.SceneRegistryItem.html">SceneRegistryItem</a></li>
+        <li id="nav-pc.ScopeId"><a href="pc.ScopeId.html">ScopeId</a></li>
+        <li id="nav-pc.ScopeSpace"><a href="pc.ScopeSpace.html">ScopeSpace</a></li>
+        <li id="nav-pc.ScreenComponent"><a href="pc.ScreenComponent.html">ScreenComponent</a></li>
+        <li id="nav-pc.ScreenComponentSystem"><a href="pc.ScreenComponentSystem.html">ScreenComponentSystem</a></li>
+        <li id="nav-pc.ScriptAttributes"><a href="pc.ScriptAttributes.html">ScriptAttributes</a></li>
+        <li id="nav-pc.ScriptComponent"><a href="pc.ScriptComponent.html">ScriptComponent</a></li>
+        <li id="nav-pc.ScriptComponentSystem"><a href="pc.ScriptComponentSystem.html">ScriptComponentSystem</a></li>
+        <li id="nav-pc.ScriptHandler"><a href="pc.ScriptHandler.html">ScriptHandler</a></li>
+        <li id="nav-pc.ScriptRegistry"><a href="pc.ScriptRegistry.html">ScriptRegistry</a></li>
+        <li id="nav-pc.ScriptType"><a href="pc.ScriptType.html">ScriptType</a></li>
+        <li id="nav-pc.ScrollbarComponent"><a href="pc.ScrollbarComponent.html">ScrollbarComponent</a></li>
+        <li id="nav-pc.ScrollbarComponentSystem"><a href="pc.ScrollbarComponentSystem.html">ScrollbarComponentSystem</a></li>
+        <li id="nav-pc.ScrollViewComponent"><a href="pc.ScrollViewComponent.html">ScrollViewComponent</a></li>
+        <li id="nav-pc.ScrollViewComponentSystem"><a href="pc.ScrollViewComponentSystem.html">ScrollViewComponentSystem</a></li>
+        <li id="nav-pc.Shader"><a href="pc.Shader.html">Shader</a></li>
+        <li id="nav-pc.SingleContactResult"><a href="pc.SingleContactResult.html">SingleContactResult</a></li>
+        <li id="nav-pc.Skeleton"><a href="pc.Skeleton.html">Skeleton</a></li>
+        <li id="nav-pc.Skin"><a href="pc.Skin.html">Skin</a></li>
+        <li id="nav-pc.SkinInstance"><a href="pc.SkinInstance.html">SkinInstance</a></li>
+        <li id="nav-pc.Sound"><a href="pc.Sound.html">Sound</a></li>
+        <li id="nav-pc.SoundComponent"><a href="pc.SoundComponent.html">SoundComponent</a></li>
+        <li id="nav-pc.SoundComponentSystem"><a href="pc.SoundComponentSystem.html">SoundComponentSystem</a></li>
+        <li id="nav-pc.SoundInstance"><a href="pc.SoundInstance.html">SoundInstance</a></li>
+        <li id="nav-pc.SoundInstance3d"><a href="pc.SoundInstance3d.html">SoundInstance3d</a></li>
+        <li id="nav-pc.SoundManager"><a href="pc.SoundManager.html">SoundManager</a></li>
+        <li id="nav-pc.SoundSlot"><a href="pc.SoundSlot.html">SoundSlot</a></li>
+        <li id="nav-pc.Sprite"><a href="pc.Sprite.html">Sprite</a></li>
+        <li id="nav-pc.SpriteAnimationClip"><a href="pc.SpriteAnimationClip.html">SpriteAnimationClip</a></li>
+        <li id="nav-pc.SpriteComponent"><a href="pc.SpriteComponent.html">SpriteComponent</a></li>
+        <li id="nav-pc.SpriteComponentSystem"><a href="pc.SpriteComponentSystem.html">SpriteComponentSystem</a></li>
+        <li id="nav-pc.SpriteHandler"><a href="pc.SpriteHandler.html">SpriteHandler</a></li>
+        <li id="nav-pc.StandardMaterial"><a href="pc.StandardMaterial.html">StandardMaterial</a></li>
+        <li id="nav-pc.StencilParameters"><a href="pc.StencilParameters.html">StencilParameters</a></li>
+        <li id="nav-pc.Tags"><a href="pc.Tags.html">Tags</a></li>
+        <li id="nav-pc.Texture"><a href="pc.Texture.html">Texture</a></li>
+        <li id="nav-pc.TextureAtlas"><a href="pc.TextureAtlas.html">TextureAtlas</a></li>
+        <li id="nav-pc.TextureAtlasHandler"><a href="pc.TextureAtlasHandler.html">TextureAtlasHandler</a></li>
+        <li id="nav-pc.TextureHandler"><a href="pc.TextureHandler.html">TextureHandler</a></li>
+        <li id="nav-pc.TextureParser"><a href="pc.TextureParser.html">TextureParser</a></li>
+        <li id="nav-pc.Touch"><a href="pc.Touch.html">Touch</a></li>
+        <li id="nav-pc.TouchDevice"><a href="pc.TouchDevice.html">TouchDevice</a></li>
+        <li id="nav-pc.TouchEvent"><a href="pc.TouchEvent.html">TouchEvent</a></li>
+        <li id="nav-pc.TransformFeedback"><a href="pc.TransformFeedback.html">TransformFeedback</a></li>
+        <li id="nav-pc.Vec2"><a href="pc.Vec2.html">Vec2</a></li>
+        <li id="nav-pc.Vec3"><a href="pc.Vec3.html">Vec3</a></li>
+        <li id="nav-pc.Vec4"><a href="pc.Vec4.html">Vec4</a></li>
+        <li id="nav-pc.VertexBuffer"><a href="pc.VertexBuffer.html">VertexBuffer</a></li>
+        <li id="nav-pc.VertexFormat"><a href="pc.VertexFormat.html">VertexFormat</a></li>
+        <li id="nav-pc.VertexIterator"><a href="pc.VertexIterator.html">VertexIterator</a></li>
+        <li id="nav-pc.VertexIteratorAccessor"><a href="pc.VertexIteratorAccessor.html">VertexIteratorAccessor</a></li>
+        <li id="nav-pc.XrHitTest"><a href="pc.XrHitTest.html">XrHitTest</a></li>
+        <li id="nav-pc.XrHitTestSource"><a href="pc.XrHitTestSource.html">XrHitTestSource</a></li>
+        <li id="nav-pc.XrInput"><a href="pc.XrInput.html">XrInput</a></li>
+        <li id="nav-pc.XrInputSource"><a href="pc.XrInputSource.html">XrInputSource</a></li>
+        <li id="nav-pc.XrLightEstimation"><a href="pc.XrLightEstimation.html">XrLightEstimation</a></li>
+        <li id="nav-pc.XrManager"><a href="pc.XrManager.html">XrManager</a></li>
+    </ul>
+</nav>
+<div class='sidebarToggle'><span></span>Class List</div>
+            <main class="cls">
+    <h1>pc.Tags</h1>
+    <p class="extends">Extends: <a href="pc.EventHandler.html">pc.EventHandler</a></p>
+    <p><p>Set of tag names.</p></p>
+
+    <!-- summary -->
+    <h1>Summary</h1>
+
+    <!--type definitions-->
+
+    <!--static properties-->
+
+    <!--static methods-->
+
+    <!--properties-->
+    <h3>Properties</h3>
+    <table class="properties">
+    <tr>
+        <td><a href="#size">size</a></td><td><p>Number of tags in set.<span class='readonly'>[read only]</span></td>
+    </tr>
+    </table>
+
+    <!--methods-->
+    <h3>Methods</h3>
+    <table class="properties">
+    <tr>
+        <td><a href="#add">add</a></td><td><p>Add a tag, duplicates are ignored.</td>
+    </tr>
+    <tr>
+        <td><a href="#clear">clear</a></td><td><p>Remove all tags.</td>
+    </tr>
+    <tr>
+        <td><a href="#has">has</a></td><td><p>Check if tags satisfy filters.</td>
+    </tr>
+    <tr>
+        <td><a href="#list">list</a></td><td><p>Returns immutable array of tags.</td>
+    </tr>
+    <tr>
+        <td><a href="#remove">remove</a></td><td><p>Remove tag.</td>
+    </tr>
+    </table>
+
+    <!--events-->
+    <h3>Events</h3>
+    <table class="properties">
+    <tr>
+        <td><a href="#event:add">add</a></td><td></td>
+    </tr>
+    <tr>
+        <td><a href="#event:change">change</a></td><td><p>Fires when tags been added / removed.</td>
+    </tr>
+    <tr>
+        <td><a href="#event:remove">remove</a></td><td></td>
+    </tr>
+    </table>
+
+    <h2>Inherited</h2>
+
+    <!--inherited methods-->
+
+        <!--inherited properties-->
+
+    <!--inherited static methods-->
+    <h3>Methods</h3>
+    <table class="properties">
+    <tr>
+        <td><a href="#fire">fire</a></td><td><p>Fire an event, all additional arguments are passed on to the event listener.</td>
+    </tr>
+    <tr>
+        <td><a href="#hasEvent">hasEvent</a></td><td><p>Test if there are any handlers bound to an event name.</td>
+    </tr>
+    <tr>
+        <td><a href="#off">off</a></td><td><p>Detach an event handler from an event.</td>
+    </tr>
+    <tr>
+        <td><a href="#on">on</a></td><td><p>Attach an event handler to an event.</td>
+    </tr>
+    <tr>
+        <td><a href="#once">once</a></td><td><p>Attach an event handler to an event.</td>
+    </tr>
+    </table>
+
+    <!--inherited events-->
+
+
+    <h1>Details</h1>
+
+    <!--type definitions-->
+
+    <!--static members-->
+
+    <!--static methods-->
+
+    <h2>Constructor</h2>
+    <!-- Constructor -->
+    <div id="Tags">
+    <h3 class="methodname">Tags([parent]) <a class="font-icon" href="#Tags">&#58216;</a></h3>
+    <p><p>Create an instance of a Tags.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>parent</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></td><td><p>Parent object who tags belong to.
+Note: Tags are used as addition of <code>pc.Entity</code> and <code>pc.Asset</code> as <code>tags</code> field.</p></td>
+        </tr>
+    </table>
+
+</div>
+
+    <!--properties-->
+    <h2>Properties</h2>
+        <div id="size">
+    <span class="property"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span><span class="property">size <a class="font-icon" href="#size">&#58216;</a></span>
+    <p><p>Number of tags in set.</p><span class='readonly'>[read only]</span></p>
+</div>
+
+    <!--methods-->
+    <h2>Methods</h2>
+        <div id="add">
+    <h3 class="methodname">add(name) <a class="font-icon" href="#add">&#58216;</a></h3>
+    <p><p>Add a tag, duplicates are ignored. Can be array or comma separated arguments for multiple tags.</p></p>
+    <pre><code class="javascript">tags.add('level-1');</code></pre>
+    <pre><code class="javascript">tags.add('ui', 'settings');</code></pre>
+    <pre><code class="javascript">tags.add(['level-2', 'mob']);</code></pre>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>name</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>Name of a tag, or array of tags.</p></td>
+        </tr>
+    </table>
+
+    <h4>Returns</h4>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> <p>True if any tag were added.</p>
+</div>
+        <div id="clear">
+    <h3 class="methodname">clear() <a class="font-icon" href="#clear">&#58216;</a></h3>
+    <p><p>Remove all tags.</p></p>
+    <pre><code class="javascript">tags.clear();</code></pre>
+
+
+</div>
+        <div id="has">
+    <h3 class="methodname">has(query) <a class="font-icon" href="#has">&#58216;</a></h3>
+    <p><p>Check if tags satisfy filters.
+Filters can be provided by simple name of tag, as well as by array of tags.
+When an array is provided it will check if tags contain each tag within the array.
+If any of comma separated argument is satisfied, then it will return true.
+Any number of combinations are valid, and order is irrelevant.</p></p>
+    <pre><code class="javascript">tags.has('player'); // player</code></pre>
+    <pre><code class="javascript">tags.has('mob', 'player'); // player OR mob</code></pre>
+    <pre><code class="javascript">tags.has(['level-1', 'mob']); // monster AND level-1</code></pre>
+    <pre><code class="javascript">tags.has(['ui', 'settings'], ['ui', 'levels']); // (ui AND settings) OR (ui AND levels)</code></pre>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>query</td><td><a href="#">*</a></td><td><p>Name of a tag or array of tags.</p></td>
+        </tr>
+    </table>
+
+    <h4>Returns</h4>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> <p>True if filters are satisfied.</p>
+</div>
+        <div id="list">
+    <h3 class="methodname">list() <a class="font-icon" href="#list">&#58216;</a></h3>
+    <p><p>Returns immutable array of tags.</p></p>
+
+
+    <h4>Returns</h4>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string[]</a> <p>Copy of tags array.</p>
+</div>
+        <div id="remove">
+    <h3 class="methodname">remove(name) <a class="font-icon" href="#remove">&#58216;</a></h3>
+    <p><p>Remove tag.</p></p>
+    <pre><code class="javascript">tags.remove('level-1');</code></pre>
+    <pre><code class="javascript">tags.remove('ui', 'settings');</code></pre>
+    <pre><code class="javascript">tags.remove(['level-2', 'mob']);</code></pre>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>name</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>Name of a tag or array of tags.</p></td>
+        </tr>
+    </table>
+
+    <h4>Returns</h4>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> <p>True if any tag were removed.</p>
+</div>
+
+    <!--events-->
+    <h2>Events</h2>
+        <div id="event:add">
+    <h3 class="methodname">add <a class="font-icon" href="#event:add">&#58216;</a></h3>
+    <p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>tag</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>Name of a tag added to a set.</p></td>
+        </tr>
+        <tr>
+            <td>parent</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></td><td><p>Parent object who tags belong to.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="event:change">
+    <h3 class="methodname">change <a class="font-icon" href="#event:change">&#58216;</a></h3>
+    <p><p>Fires when tags been added / removed.
+It will fire once on bulk changes, while <code>add</code>/<code>remove</code> will fire on each tag operation.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>parent</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></td><td><p>Parent object who tags belong to.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="event:remove">
+    <h3 class="methodname">remove <a class="font-icon" href="#event:remove">&#58216;</a></h3>
+    <p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>tag</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>Name of a tag removed from a set.</p></td>
+        </tr>
+        <tr>
+            <td>parent</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></td><td><p>Parent object who tags belong to.</p></td>
+        </tr>
+    </table>
+</div>
+
+    <h2>Inherited</h2>
+    <!--inherited properties-->
+
+    <!--inherited methods-->
+    <h2>Methods</h2>
+        <div id="fire">
+    <h3 class="methodname">fire(name, [arg1], [arg2], [arg3], [arg4], [arg5], [arg6], [arg7], [arg8]) <a class="font-icon" href="#fire">&#58216;</a></h3>
+    <p><p>Fire an event, all additional arguments are passed on to the event listener.</p></p>
+    <pre><code class="javascript">obj.fire('test', 'This is the message');</code></pre>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>name</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></td><td><p>Name of event to fire.</p></td>
+        </tr>
+        <tr>
+            <td>arg1</td><td><a href="#">*</a></td><td><p>First argument that is passed to the event handler.</p></td>
+        </tr>
+        <tr>
+            <td>arg2</td><td><a href="#">*</a></td><td><p>Second argument that is passed to the event handler.</p></td>
+        </tr>
+        <tr>
+            <td>arg3</td><td><a href="#">*</a></td><td><p>Third argument that is passed to the event handler.</p></td>
+        </tr>
+        <tr>
+            <td>arg4</td><td><a href="#">*</a></td><td><p>Fourth argument that is passed to the event handler.</p></td>
+        </tr>
+        <tr>
+            <td>arg5</td><td><a href="#">*</a></td><td><p>Fifth argument that is passed to the event handler.</p></td>
+        </tr>
+        <tr>
+            <td>arg6</td><td><a href="#">*</a></td><td><p>Sixth argument that is passed to the event handler.</p></td>
+        </tr>
+        <tr>
+            <td>arg7</td><td><a href="#">*</a></td><td><p>Seventh argument that is passed to the event handler.</p></td>
+        </tr>
+        <tr>
+            <td>arg8</td><td><a href="#">*</a></td><td><p>Eighth argument that is passed to the event handler.</p></td>
+        </tr>
+    </table>
+
+    <h4>Returns</h4>
+    <a href="pc.EventHandler.html">pc.EventHandler</a> <p>Self for chaining.</p>
+</div>
+        <div id="hasEvent">
+    <h3 class="methodname">hasEvent(name) <a class="font-icon" href="#hasEvent">&#58216;</a></h3>
+    <p><p>Test if there are any handlers bound to an event name.</p></p>
+    <pre><code class="javascript">obj.on('test', function () { }); // bind an event to 'test'obj.hasEvent('test'); // returns trueobj.hasEvent('hello'); // returns false</code></pre>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>name</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>The name of the event to test.</p></td>
+        </tr>
+    </table>
+
+    <h4>Returns</h4>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> <p>True if the object has handlers bound to the specified event name.</p>
+</div>
+        <div id="off">
+    <h3 class="methodname">off([name], [callback], [scope]) <a class="font-icon" href="#off">&#58216;</a></h3>
+    <p><p>Detach an event handler from an event. If callback is not provided then all callbacks are unbound from the event,
+if scope is not provided then all events with the callback will be unbound.</p></p>
+    <pre><code class="javascript">var handler = function () {};obj.on('test', handler);obj.off(); // Removes all eventsobj.off('test'); // Removes all events called 'test'obj.off('test', handler); // Removes all handler functions, called 'test'obj.off('test', handler, this); // Removes all hander functions, called 'test' with scope this</code></pre>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>name</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>Name of the event to unbind.</p></td>
+        </tr>
+        <tr>
+            <td>callback</td><td><a href="pc.callbacks.html#HandleEvent">pc.callbacks.HandleEvent</a></td><td><p>Function to be unbound.</p></td>
+        </tr>
+        <tr>
+            <td>scope</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></td><td><p>Scope that was used as the this when the event is fired.</p></td>
+        </tr>
+    </table>
+
+    <h4>Returns</h4>
+    <a href="pc.EventHandler.html">pc.EventHandler</a> <p>Self for chaining.</p>
+</div>
+        <div id="on">
+    <h3 class="methodname">on(name, callback, [scope]) <a class="font-icon" href="#on">&#58216;</a></h3>
+    <p><p>Attach an event handler to an event.</p></p>
+    <pre><code class="javascript">obj.on('test', function (a, b) {    console.log(a + b);});obj.fire('test', 1, 2); // prints 3 to the console</code></pre>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>name</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>Name of the event to bind the callback to.</p></td>
+        </tr>
+        <tr>
+            <td>callback</td><td><a href="pc.callbacks.html#HandleEvent">pc.callbacks.HandleEvent</a></td><td><p>Function that is called when event is fired. Note the callback is limited to 8 arguments.</p></td>
+        </tr>
+        <tr>
+            <td>scope</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></td><td><p>Object to use as 'this' when the event is fired, defaults to current this.</p></td>
+        </tr>
+    </table>
+
+    <h4>Returns</h4>
+    <a href="pc.EventHandler.html">pc.EventHandler</a> <p>Self for chaining.</p>
+</div>
+        <div id="once">
+    <h3 class="methodname">once(name, callback, [scope]) <a class="font-icon" href="#once">&#58216;</a></h3>
+    <p><p>Attach an event handler to an event. This handler will be removed after being fired once.</p></p>
+    <pre><code class="javascript">obj.once('test', function (a, b) {    console.log(a + b);});obj.fire('test', 1, 2); // prints 3 to the consoleobj.fire('test', 1, 2); // not going to get handled</code></pre>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>name</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>Name of the event to bind the callback to.</p></td>
+        </tr>
+        <tr>
+            <td>callback</td><td><a href="pc.callbacks.html#HandleEvent">pc.callbacks.HandleEvent</a></td><td><p>Function that is called when event is fired. Note the callback is limited to 8 arguments.</p></td>
+        </tr>
+        <tr>
+            <td>scope</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></td><td><p>Object to use as 'this' when the event is fired, defaults to current this.</p></td>
+        </tr>
+    </table>
+
+    <h4>Returns</h4>
+    <a href="pc.EventHandler.html">pc.EventHandler</a> <p>Self for chaining.</p>
+</div>
+
+    <!--inherited events-->
+</main>
+        </div>
+
+            </body>
+
+</html>

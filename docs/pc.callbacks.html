@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>pc.callbacks | PlayCanvas API Reference</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/playcanvas-favicon.png">
+
+        <link href="styles/styles.css" rel="stylesheet">
+        <link href="styles/playcanvas-theme.css" rel="stylesheet">
+        <script src="scripts/interface.js"></script>
+        <script src="scripts/highlight.min.js"></script>
+
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+
+    <body>
+        <header>
+    <nav class="header-width">
+        <a href="/" class="header-title"><img src="images/playcanvas-manual.png"></a>
+        <ul class="header-menu">
+            <li class="user-manual"><a href="https://developer.playcanvas.com/en/user-manual/">User Manual</a></li>
+            <li class="tutorials"><a href="https://developer.playcanvas.com/en/tutorials">Tutorials</a></li>
+            <li class="forum"><a href="https://forum.playcanvas.com/" target="_blank">Forum</a></li>
+            <li class="api active"><a href="/api/">API Reference</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-content header-page header-width">
+        <h1><span class="font-icon">&#58195;</span>API Reference</h1>
+        <input id="search" class="search" type="text" placeholder="Search"></input>
+    </div>
+</header>
+        <div class="container content-width">
+            <nav class="sidebar">
+    <div class="sidebarFilter">
+        <input id="filter-input" type="text" placeholder="Filter">
+    </div>
+    <ul>
+        <li id="nav-pc"><a href="pc.html">pc</a></li>
+        <li id="nav-pc.callbacks"><a href="pc.callbacks.html">pc.callbacks</a></li>
+        <li id="nav-pc.guid"><a href="pc.guid.html">pc.guid</a></li>
+        <li id="nav-pc.math"><a href="pc.math.html">pc.math</a></li>
+        <li id="nav-pc.path"><a href="pc.path.html">pc.path</a></li>
+        <li id="nav-pc.platform"><a href="pc.platform.html">pc.platform</a></li>
+        <li id="nav-pc.script"><a href="pc.script.html">pc.script</a></li>
+        <li id="nav-pc.string"><a href="pc.string.html">pc.string</a></li>
+        <li id="nav-pc.Animation"><a href="pc.Animation.html">Animation</a></li>
+        <li id="nav-pc.AnimationComponent"><a href="pc.AnimationComponent.html">AnimationComponent</a></li>
+        <li id="nav-pc.AnimationComponentSystem"><a href="pc.AnimationComponentSystem.html">AnimationComponentSystem</a></li>
+        <li id="nav-pc.AnimationHandler"><a href="pc.AnimationHandler.html">AnimationHandler</a></li>
+        <li id="nav-pc.Application"><a href="pc.Application.html">Application</a></li>
+        <li id="nav-pc.Asset"><a href="pc.Asset.html">Asset</a></li>
+        <li id="nav-pc.AssetReference"><a href="pc.AssetReference.html">AssetReference</a></li>
+        <li id="nav-pc.AssetRegistry"><a href="pc.AssetRegistry.html">AssetRegistry</a></li>
+        <li id="nav-pc.AudioHandler"><a href="pc.AudioHandler.html">AudioHandler</a></li>
+        <li id="nav-pc.AudioListenerComponent"><a href="pc.AudioListenerComponent.html">AudioListenerComponent</a></li>
+        <li id="nav-pc.AudioListenerComponentSystem"><a href="pc.AudioListenerComponentSystem.html">AudioListenerComponentSystem</a></li>
+        <li id="nav-pc.BasicMaterial"><a href="pc.BasicMaterial.html">BasicMaterial</a></li>
+        <li id="nav-pc.BasisParser"><a href="pc.BasisParser.html">BasisParser</a></li>
+        <li id="nav-pc.Batch"><a href="pc.Batch.html">Batch</a></li>
+        <li id="nav-pc.BatchGroup"><a href="pc.BatchGroup.html">BatchGroup</a></li>
+        <li id="nav-pc.BatchManager"><a href="pc.BatchManager.html">BatchManager</a></li>
+        <li id="nav-pc.BoundingBox"><a href="pc.BoundingBox.html">BoundingBox</a></li>
+        <li id="nav-pc.BoundingSphere"><a href="pc.BoundingSphere.html">BoundingSphere</a></li>
+        <li id="nav-pc.ButtonComponent"><a href="pc.ButtonComponent.html">ButtonComponent</a></li>
+        <li id="nav-pc.ButtonComponentSystem"><a href="pc.ButtonComponentSystem.html">ButtonComponentSystem</a></li>
+        <li id="nav-pc.CameraComponent"><a href="pc.CameraComponent.html">CameraComponent</a></li>
+        <li id="nav-pc.CameraComponentSystem"><a href="pc.CameraComponentSystem.html">CameraComponentSystem</a></li>
+        <li id="nav-pc.CollisionComponent"><a href="pc.CollisionComponent.html">CollisionComponent</a></li>
+        <li id="nav-pc.CollisionComponentSystem"><a href="pc.CollisionComponentSystem.html">CollisionComponentSystem</a></li>
+        <li id="nav-pc.Color"><a href="pc.Color.html">Color</a></li>
+        <li id="nav-pc.Component"><a href="pc.Component.html">Component</a></li>
+        <li id="nav-pc.ComponentSystem"><a href="pc.ComponentSystem.html">ComponentSystem</a></li>
+        <li id="nav-pc.ComponentSystemRegistry"><a href="pc.ComponentSystemRegistry.html">ComponentSystemRegistry</a></li>
+        <li id="nav-pc.ContactPoint"><a href="pc.ContactPoint.html">ContactPoint</a></li>
+        <li id="nav-pc.ContactResult"><a href="pc.ContactResult.html">ContactResult</a></li>
+        <li id="nav-pc.ContainerHandler"><a href="pc.ContainerHandler.html">ContainerHandler</a></li>
+        <li id="nav-pc.ContainerResource"><a href="pc.ContainerResource.html">ContainerResource</a></li>
+        <li id="nav-pc.Controller"><a href="pc.Controller.html">Controller</a></li>
+        <li id="nav-pc.CubemapHandler"><a href="pc.CubemapHandler.html">CubemapHandler</a></li>
+        <li id="nav-pc.Curve"><a href="pc.Curve.html">Curve</a></li>
+        <li id="nav-pc.CurveSet"><a href="pc.CurveSet.html">CurveSet</a></li>
+        <li id="nav-pc.DdsParser"><a href="pc.DdsParser.html">DdsParser</a></li>
+        <li id="nav-pc.ElementComponent"><a href="pc.ElementComponent.html">ElementComponent</a></li>
+        <li id="nav-pc.ElementComponentSystem"><a href="pc.ElementComponentSystem.html">ElementComponentSystem</a></li>
+        <li id="nav-pc.ElementDragHelper"><a href="pc.ElementDragHelper.html">ElementDragHelper</a></li>
+        <li id="nav-pc.ElementInput"><a href="pc.ElementInput.html">ElementInput</a></li>
+        <li id="nav-pc.ElementInputEvent"><a href="pc.ElementInputEvent.html">ElementInputEvent</a></li>
+        <li id="nav-pc.ElementMouseEvent"><a href="pc.ElementMouseEvent.html">ElementMouseEvent</a></li>
+        <li id="nav-pc.ElementSelectEvent"><a href="pc.ElementSelectEvent.html">ElementSelectEvent</a></li>
+        <li id="nav-pc.ElementTouchEvent"><a href="pc.ElementTouchEvent.html">ElementTouchEvent</a></li>
+        <li id="nav-pc.Entity"><a href="pc.Entity.html">Entity</a></li>
+        <li id="nav-pc.EventHandler"><a href="pc.EventHandler.html">EventHandler</a></li>
+        <li id="nav-pc.Font"><a href="pc.Font.html">Font</a></li>
+        <li id="nav-pc.FontHandler"><a href="pc.FontHandler.html">FontHandler</a></li>
+        <li id="nav-pc.ForwardRenderer"><a href="pc.ForwardRenderer.html">ForwardRenderer</a></li>
+        <li id="nav-pc.Frustum"><a href="pc.Frustum.html">Frustum</a></li>
+        <li id="nav-pc.GamePads"><a href="pc.GamePads.html">GamePads</a></li>
+        <li id="nav-pc.GraphicsDevice"><a href="pc.GraphicsDevice.html">GraphicsDevice</a></li>
+        <li id="nav-pc.GraphNode"><a href="pc.GraphNode.html">GraphNode</a></li>
+        <li id="nav-pc.Http"><a href="pc.Http.html">Http</a></li>
+        <li id="nav-pc.I18n"><a href="pc.I18n.html">I18n</a></li>
+        <li id="nav-pc.ImgParser"><a href="pc.ImgParser.html">ImgParser</a></li>
+        <li id="nav-pc.IndexBuffer"><a href="pc.IndexBuffer.html">IndexBuffer</a></li>
+        <li id="nav-pc.Keyboard"><a href="pc.Keyboard.html">Keyboard</a></li>
+        <li id="nav-pc.KeyboardEvent"><a href="pc.KeyboardEvent.html">KeyboardEvent</a></li>
+        <li id="nav-pc.KtxParser"><a href="pc.KtxParser.html">KtxParser</a></li>
+        <li id="nav-pc.Layer"><a href="pc.Layer.html">Layer</a></li>
+        <li id="nav-pc.LayerComposition"><a href="pc.LayerComposition.html">LayerComposition</a></li>
+        <li id="nav-pc.LayoutChildComponent"><a href="pc.LayoutChildComponent.html">LayoutChildComponent</a></li>
+        <li id="nav-pc.LayoutChildComponentSystem"><a href="pc.LayoutChildComponentSystem.html">LayoutChildComponentSystem</a></li>
+        <li id="nav-pc.LayoutGroupComponent"><a href="pc.LayoutGroupComponent.html">LayoutGroupComponent</a></li>
+        <li id="nav-pc.LayoutGroupComponentSystem"><a href="pc.LayoutGroupComponentSystem.html">LayoutGroupComponentSystem</a></li>
+        <li id="nav-pc.LegacyDdsParser"><a href="pc.LegacyDdsParser.html">LegacyDdsParser</a></li>
+        <li id="nav-pc.LightComponent"><a href="pc.LightComponent.html">LightComponent</a></li>
+        <li id="nav-pc.LightComponentSystem"><a href="pc.LightComponentSystem.html">LightComponentSystem</a></li>
+        <li id="nav-pc.Lightmapper"><a href="pc.Lightmapper.html">Lightmapper</a></li>
+        <li id="nav-pc.Mat3"><a href="pc.Mat3.html">Mat3</a></li>
+        <li id="nav-pc.Mat4"><a href="pc.Mat4.html">Mat4</a></li>
+        <li id="nav-pc.Material"><a href="pc.Material.html">Material</a></li>
+        <li id="nav-pc.MaterialHandler"><a href="pc.MaterialHandler.html">MaterialHandler</a></li>
+        <li id="nav-pc.Mesh"><a href="pc.Mesh.html">Mesh</a></li>
+        <li id="nav-pc.MeshInstance"><a href="pc.MeshInstance.html">MeshInstance</a></li>
+        <li id="nav-pc.Model"><a href="pc.Model.html">Model</a></li>
+        <li id="nav-pc.ModelComponent"><a href="pc.ModelComponent.html">ModelComponent</a></li>
+        <li id="nav-pc.ModelComponentSystem"><a href="pc.ModelComponentSystem.html">ModelComponentSystem</a></li>
+        <li id="nav-pc.ModelHandler"><a href="pc.ModelHandler.html">ModelHandler</a></li>
+        <li id="nav-pc.Morph"><a href="pc.Morph.html">Morph</a></li>
+        <li id="nav-pc.MorphInstance"><a href="pc.MorphInstance.html">MorphInstance</a></li>
+        <li id="nav-pc.MorphTarget"><a href="pc.MorphTarget.html">MorphTarget</a></li>
+        <li id="nav-pc.Mouse"><a href="pc.Mouse.html">Mouse</a></li>
+        <li id="nav-pc.MouseEvent"><a href="pc.MouseEvent.html">MouseEvent</a></li>
+        <li id="nav-pc.Node"><a href="pc.Node.html">Node</a></li>
+        <li id="nav-pc.OrientedBox"><a href="pc.OrientedBox.html">OrientedBox</a></li>
+        <li id="nav-pc.ParticleSystemComponent"><a href="pc.ParticleSystemComponent.html">ParticleSystemComponent</a></li>
+        <li id="nav-pc.ParticleSystemComponentSystem"><a href="pc.ParticleSystemComponentSystem.html">ParticleSystemComponentSystem</a></li>
+        <li id="nav-pc.Picker"><a href="pc.Picker.html">Picker</a></li>
+        <li id="nav-pc.PostEffect"><a href="pc.PostEffect.html">PostEffect</a></li>
+        <li id="nav-pc.PostEffectQueue"><a href="pc.PostEffectQueue.html">PostEffectQueue</a></li>
+        <li id="nav-pc.Quat"><a href="pc.Quat.html">Quat</a></li>
+        <li id="nav-pc.Ray"><a href="pc.Ray.html">Ray</a></li>
+        <li id="nav-pc.RaycastResult"><a href="pc.RaycastResult.html">RaycastResult</a></li>
+        <li id="nav-pc.RenderTarget"><a href="pc.RenderTarget.html">RenderTarget</a></li>
+        <li id="nav-pc.ResourceHandler"><a href="pc.ResourceHandler.html">ResourceHandler</a></li>
+        <li id="nav-pc.ResourceLoader"><a href="pc.ResourceLoader.html">ResourceLoader</a></li>
+        <li id="nav-pc.RigidBodyComponent"><a href="pc.RigidBodyComponent.html">RigidBodyComponent</a></li>
+        <li id="nav-pc.RigidBodyComponentSystem"><a href="pc.RigidBodyComponentSystem.html">RigidBodyComponentSystem</a></li>
+        <li id="nav-pc.Scene"><a href="pc.Scene.html">Scene</a></li>
+        <li id="nav-pc.SceneHandler"><a href="pc.SceneHandler.html">SceneHandler</a></li>
+        <li id="nav-pc.SceneRegistry"><a href="pc.SceneRegistry.html">SceneRegistry</a></li>
+        <li id="nav-pc.SceneRegistryItem"><a href="pc.SceneRegistryItem.html">SceneRegistryItem</a></li>
+        <li id="nav-pc.ScopeId"><a href="pc.ScopeId.html">ScopeId</a></li>
+        <li id="nav-pc.ScopeSpace"><a href="pc.ScopeSpace.html">ScopeSpace</a></li>
+        <li id="nav-pc.ScreenComponent"><a href="pc.ScreenComponent.html">ScreenComponent</a></li>
+        <li id="nav-pc.ScreenComponentSystem"><a href="pc.ScreenComponentSystem.html">ScreenComponentSystem</a></li>
+        <li id="nav-pc.ScriptAttributes"><a href="pc.ScriptAttributes.html">ScriptAttributes</a></li>
+        <li id="nav-pc.ScriptComponent"><a href="pc.ScriptComponent.html">ScriptComponent</a></li>
+        <li id="nav-pc.ScriptComponentSystem"><a href="pc.ScriptComponentSystem.html">ScriptComponentSystem</a></li>
+        <li id="nav-pc.ScriptHandler"><a href="pc.ScriptHandler.html">ScriptHandler</a></li>
+        <li id="nav-pc.ScriptRegistry"><a href="pc.ScriptRegistry.html">ScriptRegistry</a></li>
+        <li id="nav-pc.ScriptType"><a href="pc.ScriptType.html">ScriptType</a></li>
+        <li id="nav-pc.ScrollbarComponent"><a href="pc.ScrollbarComponent.html">ScrollbarComponent</a></li>
+        <li id="nav-pc.ScrollbarComponentSystem"><a href="pc.ScrollbarComponentSystem.html">ScrollbarComponentSystem</a></li>
+        <li id="nav-pc.ScrollViewComponent"><a href="pc.ScrollViewComponent.html">ScrollViewComponent</a></li>
+        <li id="nav-pc.ScrollViewComponentSystem"><a href="pc.ScrollViewComponentSystem.html">ScrollViewComponentSystem</a></li>
+        <li id="nav-pc.Shader"><a href="pc.Shader.html">Shader</a></li>
+        <li id="nav-pc.SingleContactResult"><a href="pc.SingleContactResult.html">SingleContactResult</a></li>
+        <li id="nav-pc.Skeleton"><a href="pc.Skeleton.html">Skeleton</a></li>
+        <li id="nav-pc.Skin"><a href="pc.Skin.html">Skin</a></li>
+        <li id="nav-pc.SkinInstance"><a href="pc.SkinInstance.html">SkinInstance</a></li>
+        <li id="nav-pc.Sound"><a href="pc.Sound.html">Sound</a></li>
+        <li id="nav-pc.SoundComponent"><a href="pc.SoundComponent.html">SoundComponent</a></li>
+        <li id="nav-pc.SoundComponentSystem"><a href="pc.SoundComponentSystem.html">SoundComponentSystem</a></li>
+        <li id="nav-pc.SoundInstance"><a href="pc.SoundInstance.html">SoundInstance</a></li>
+        <li id="nav-pc.SoundInstance3d"><a href="pc.SoundInstance3d.html">SoundInstance3d</a></li>
+        <li id="nav-pc.SoundManager"><a href="pc.SoundManager.html">SoundManager</a></li>
+        <li id="nav-pc.SoundSlot"><a href="pc.SoundSlot.html">SoundSlot</a></li>
+        <li id="nav-pc.Sprite"><a href="pc.Sprite.html">Sprite</a></li>
+        <li id="nav-pc.SpriteAnimationClip"><a href="pc.SpriteAnimationClip.html">SpriteAnimationClip</a></li>
+        <li id="nav-pc.SpriteComponent"><a href="pc.SpriteComponent.html">SpriteComponent</a></li>
+        <li id="nav-pc.SpriteComponentSystem"><a href="pc.SpriteComponentSystem.html">SpriteComponentSystem</a></li>
+        <li id="nav-pc.SpriteHandler"><a href="pc.SpriteHandler.html">SpriteHandler</a></li>
+        <li id="nav-pc.StandardMaterial"><a href="pc.StandardMaterial.html">StandardMaterial</a></li>
+        <li id="nav-pc.StencilParameters"><a href="pc.StencilParameters.html">StencilParameters</a></li>
+        <li id="nav-pc.Tags"><a href="pc.Tags.html">Tags</a></li>
+        <li id="nav-pc.Texture"><a href="pc.Texture.html">Texture</a></li>
+        <li id="nav-pc.TextureAtlas"><a href="pc.TextureAtlas.html">TextureAtlas</a></li>
+        <li id="nav-pc.TextureAtlasHandler"><a href="pc.TextureAtlasHandler.html">TextureAtlasHandler</a></li>
+        <li id="nav-pc.TextureHandler"><a href="pc.TextureHandler.html">TextureHandler</a></li>
+        <li id="nav-pc.TextureParser"><a href="pc.TextureParser.html">TextureParser</a></li>
+        <li id="nav-pc.Touch"><a href="pc.Touch.html">Touch</a></li>
+        <li id="nav-pc.TouchDevice"><a href="pc.TouchDevice.html">TouchDevice</a></li>
+        <li id="nav-pc.TouchEvent"><a href="pc.TouchEvent.html">TouchEvent</a></li>
+        <li id="nav-pc.TransformFeedback"><a href="pc.TransformFeedback.html">TransformFeedback</a></li>
+        <li id="nav-pc.Vec2"><a href="pc.Vec2.html">Vec2</a></li>
+        <li id="nav-pc.Vec3"><a href="pc.Vec3.html">Vec3</a></li>
+        <li id="nav-pc.Vec4"><a href="pc.Vec4.html">Vec4</a></li>
+        <li id="nav-pc.VertexBuffer"><a href="pc.VertexBuffer.html">VertexBuffer</a></li>
+        <li id="nav-pc.VertexFormat"><a href="pc.VertexFormat.html">VertexFormat</a></li>
+        <li id="nav-pc.VertexIterator"><a href="pc.VertexIterator.html">VertexIterator</a></li>
+        <li id="nav-pc.VertexIteratorAccessor"><a href="pc.VertexIteratorAccessor.html">VertexIteratorAccessor</a></li>
+        <li id="nav-pc.XrHitTest"><a href="pc.XrHitTest.html">XrHitTest</a></li>
+        <li id="nav-pc.XrHitTestSource"><a href="pc.XrHitTestSource.html">XrHitTestSource</a></li>
+        <li id="nav-pc.XrInput"><a href="pc.XrInput.html">XrInput</a></li>
+        <li id="nav-pc.XrInputSource"><a href="pc.XrInputSource.html">XrInputSource</a></li>
+        <li id="nav-pc.XrLightEstimation"><a href="pc.XrLightEstimation.html">XrLightEstimation</a></li>
+        <li id="nav-pc.XrManager"><a href="pc.XrManager.html">XrManager</a></li>
+    </ul>
+</nav>
+<div class='sidebarToggle'><span></span>Class List</div>
+            <main class="cls">
+    <h1>pc.callbacks</h1>
+    <p></p>
+    <p><p>Namespace for callback definitions.</p></p>
+
+    <!-- summary -->
+    <h1>Summary</h1>
+
+    <!--type definitions-->
+    <h3>Type Defintions</h3>
+    <table class="properties">
+    <tr>
+        <td><a href="#AddParser">AddParser</a></td><td><p>Callback used by <a href="pc.ModelHandler.html#addParser">pc.ModelHandler#addParser</a> to decide on which parser to use.</td>
+    </tr>
+    <tr>
+        <td><a href="#AssetReady">AssetReady</a></td><td><p>Callback used by <a href="pc.Asset.html#ready">pc.Asset#ready</a> and called when an asset is ready.</td>
+    </tr>
+    <tr>
+        <td><a href="#CalculateMatrix">CalculateMatrix</a></td><td><p>Callback used by pc.CameraComponent#calculateTransform and pc.CameraComponent#calculateProjection.</td>
+    </tr>
+    <tr>
+        <td><a href="#CalculateSortDistance">CalculateSortDistance</a></td><td><p>Callback used by <a href="pc.Layer.html">pc.Layer</a> to calculate the &quot;sort distance&quot; for a <a href="pc.MeshInstance.html">pc.MeshInstance</a>, which determines its place in the render order.</td>
+    </tr>
+    <tr>
+        <td><a href="#ConfigureApp">ConfigureApp</a></td><td><p>Callback used by <a href="pc.Application.html#configure">pc.Application#configure</a> when configuration file is loaded and parsed (or an error occurs).</td>
+    </tr>
+    <tr>
+        <td><a href="#CreateScreen">CreateScreen</a></td><td><p>Callback used by <a href="pc.script.html#createLoadingScreen">pc.script.createLoadingScreen</a>.</td>
+    </tr>
+    <tr>
+        <td><a href="#FilterAsset">FilterAsset</a></td><td><p>Callback used by <a href="pc.AssetRegistry.html#filter">pc.AssetRegistry#filter</a> to filter assets.</td>
+    </tr>
+    <tr>
+        <td><a href="#FindNode">FindNode</a></td><td><p>Callback used by <a href="pc.GraphNode.html#find">pc.GraphNode#find</a> and <a href="pc.GraphNode.html#findOne">pc.GraphNode#findOne</a> to search through a graph node and all of its descendants.</td>
+    </tr>
+    <tr>
+        <td><a href="#ForEach">ForEach</a></td><td><p>Callback used by <a href="pc.GraphNode.html#forEach">pc.GraphNode#forEach</a> to iterate through a graph node and all of its descendants.</td>
+    </tr>
+    <tr>
+        <td><a href="#HandleEvent">HandleEvent</a></td><td><p>Callback used by <a href="pc.events.html">pc.events</a> functions.</td>
+    </tr>
+    <tr>
+        <td><a href="#HttpResponse">HttpResponse</a></td><td><p>Callback used by <a href="pc.Http.html#get">pc.Http#get</a>, <a href="pc.Http.html#post">pc.Http#post</a>, <a href="pc.Http.html#put">pc.Http#put</a>, <a href="pc.Http.html#del">pc.Http#del</a>, and <a href="pc.Http.html#request">pc.Http#request</a>.</td>
+    </tr>
+    <tr>
+        <td><a href="#LoadAsset">LoadAsset</a></td><td><p>Callback used by <a href="pc.AssetRegistry.html#loadFromUrl">pc.AssetRegistry#loadFromUrl</a> and called when an asset is loaded (or an error occurs).</td>
+    </tr>
+    <tr>
+        <td><a href="#LoadHierarchy">LoadHierarchy</a></td><td><p>Callback used by <a href="pc.SceneRegistry.html#loadSceneHierarchy">pc.SceneRegistry#loadSceneHierarchy</a>.</td>
+    </tr>
+    <tr>
+        <td><a href="#LoadScene">LoadScene</a></td><td><p>Callback used by <a href="pc.SceneRegistry.html#loadScene">pc.SceneRegistry#loadScene</a>.</td>
+    </tr>
+    <tr>
+        <td><a href="#LoadSettings">LoadSettings</a></td><td><p>Callback used by <a href="pc.SceneRegistry.html#loadSceneSettings">pc.SceneRegistry#loadSceneSettings</a>.</td>
+    </tr>
+    <tr>
+        <td><a href="#LockMouse">LockMouse</a></td><td><p>Callback used by <a href="pc.Mouse.html#enablePointerLock">pc.Mouse#enablePointerLock</a> and pc.Application#disablePointerLock.</td>
+    </tr>
+    <tr>
+        <td><a href="#PreloadApp">PreloadApp</a></td><td><p>Callback used by <a href="pc.Application.html#preload">pc.Application#preload</a> when all assets (marked as 'preload') are loaded.</td>
+    </tr>
+    <tr>
+        <td><a href="#ResourceHandler">ResourceHandler</a></td><td><p>Callback used by <a href="pc.ResourceHandler.html#load">pc.ResourceHandler#load</a> when a resource is loaded (or an error occurs).</td>
+    </tr>
+    <tr>
+        <td><a href="#ResourceLoader">ResourceLoader</a></td><td><p>Callback used by <a href="pc.ResourceLoader.html#load">pc.ResourceLoader#load</a> when a resource is loaded (or an error occurs).</td>
+    </tr>
+    <tr>
+        <td><a href="#UpdateShader">UpdateShader</a></td><td><p>Callback used by pc.StandardMaterial#onUpdateShader.</td>
+    </tr>
+    <tr>
+        <td><a href="#VrCamera">VrCamera</a></td><td><p>Callback used by <a href="pc.CameraComponent.html#enterVr">pc.CameraComponent#enterVr</a> and <a href="pc.CameraComponent.html#exitVr">pc.CameraComponent#exitVr</a>.</td>
+    </tr>
+    <tr>
+        <td><a href="#VrDisplay">VrDisplay</a></td><td><p>Callback used by <a href="pc.VrDisplay.html#requestPresent">pc.VrDisplay#requestPresent</a> and <a href="pc.VrDisplay.html#exitPresent">pc.VrDisplay#exitPresent</a>.</td>
+    </tr>
+    <tr>
+        <td><a href="#VrFrame">VrFrame</a></td><td><p>Callback used by <a href="pc.VrDisplay.html#requestAnimationFrame">pc.VrDisplay#requestAnimationFrame</a>.</td>
+    </tr>
+    <tr>
+        <td><a href="#XrError">XrError</a></td><td><p>Callback used by pc.XrManager#endXr and pc.XrManager#startXr.</td>
+    </tr>
+    <tr>
+        <td><a href="#XrHitTestStart">XrHitTestStart</a></td><td><p>Callback used by <a href="pc.XrHitTest.html#start">pc.XrHitTest#start</a> and pc.XrHitTest#startForInputSource.</td>
+    </tr>
+    </table>
+
+    <!--static properties-->
+
+    <!--static methods-->
+
+    <!--properties-->
+
+    <!--methods-->
+
+    <!--events-->
+
+
+    <h1>Details</h1>
+
+    <!--type definitions-->
+    <h2>Type Defintions</h2>
+        <div id="AddParser">
+    <h3 class="methodname">AddParser <a class="font-icon" href="#AddParser">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.ModelHandler.html#addParser">pc.ModelHandler#addParser</a> to decide on which parser to use.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>url</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td><p>The resource url.</p></td>
+        </tr>
+        <tr>
+            <td>data</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></td><td><p>The raw model data.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="AssetReady">
+    <h3 class="methodname">AssetReady <a class="font-icon" href="#AssetReady">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.Asset.html#ready">pc.Asset#ready</a> and called when an asset is ready.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>asset</td><td><a href="pc.Asset.html">pc.Asset</a></td><td><p>The ready asset.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="CalculateMatrix">
+    <h3 class="methodname">CalculateMatrix <a class="font-icon" href="#CalculateMatrix">&#58216;</a></h3>
+    <p><p>Callback used by pc.CameraComponent#calculateTransform and pc.CameraComponent#calculateProjection.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>transformMatrix</td><td><a href="pc.Mat4.html">pc.Mat4</a></td><td><p>Output of the function.</p></td>
+        </tr>
+        <tr>
+            <td>view</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></td><td><p>Type of view. Can be pc.VIEW_CENTER, pc.VIEW_LEFT or pc.VIEW_RIGHT. Left and right are only used in stereo rendering.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="CalculateSortDistance">
+    <h3 class="methodname">CalculateSortDistance <a class="font-icon" href="#CalculateSortDistance">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.Layer.html">pc.Layer</a> to calculate the &quot;sort distance&quot; for a <a href="pc.MeshInstance.html">pc.MeshInstance</a>, which determines its place in the render order.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>meshInstance</td><td><a href="pc.MeshInstance.html">pc.MeshInstance</a></td><td><p>The mesh instance.</p></td>
+        </tr>
+        <tr>
+            <td>cameraPosition</td><td><a href="pc.Vec3.html">pc.Vec3</a></td><td><p>The position of the camera.</p></td>
+        </tr>
+        <tr>
+            <td>cameraForward</td><td><a href="pc.Vec3.html">pc.Vec3</a></td><td><p>The forward vector of the camera.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="ConfigureApp">
+    <h3 class="methodname">ConfigureApp <a class="font-icon" href="#ConfigureApp">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.Application.html#configure">pc.Application#configure</a> when configuration file is loaded and parsed (or an error occurs).</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>err</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null">null</a></td><td><p>The error message in the case where the loading or parsing fails.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="CreateScreen">
+    <h3 class="methodname">CreateScreen <a class="font-icon" href="#CreateScreen">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.script.html#createLoadingScreen">pc.script.createLoadingScreen</a>.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>app</td><td><a href="pc.Application.html">pc.Application</a></td><td><p>The application.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="FilterAsset">
+    <h3 class="methodname">FilterAsset <a class="font-icon" href="#FilterAsset">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.AssetRegistry.html#filter">pc.AssetRegistry#filter</a> to filter assets.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>asset</td><td><a href="pc.Asset.html">pc.Asset</a></td><td><p>The current asset to filter.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="FindNode">
+    <h3 class="methodname">FindNode <a class="font-icon" href="#FindNode">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.GraphNode.html#find">pc.GraphNode#find</a> and <a href="pc.GraphNode.html#findOne">pc.GraphNode#findOne</a> to search through a graph node and all of its descendants.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>node</td><td><a href="pc.GraphNode.html">pc.GraphNode</a></td><td><p>The current graph node.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="ForEach">
+    <h3 class="methodname">ForEach <a class="font-icon" href="#ForEach">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.GraphNode.html#forEach">pc.GraphNode#forEach</a> to iterate through a graph node and all of its descendants.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>node</td><td><a href="pc.GraphNode.html">pc.GraphNode</a></td><td><p>The current graph node.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="HandleEvent">
+    <h3 class="methodname">HandleEvent <a class="font-icon" href="#HandleEvent">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.events.html">pc.events</a> functions. Note the callback is limited to 8 arguments.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>arg1</td><td><a href="#">*</a></td><td><p>First argument that is passed from caller.</p></td>
+        </tr>
+        <tr>
+            <td>arg2</td><td><a href="#">*</a></td><td><p>Second argument that is passed from caller.</p></td>
+        </tr>
+        <tr>
+            <td>arg3</td><td><a href="#">*</a></td><td><p>Third argument that is passed from caller.</p></td>
+        </tr>
+        <tr>
+            <td>arg4</td><td><a href="#">*</a></td><td><p>Fourth argument that is passed from caller.</p></td>
+        </tr>
+        <tr>
+            <td>arg5</td><td><a href="#">*</a></td><td><p>Fifth argument that is passed from caller.</p></td>
+        </tr>
+        <tr>
+            <td>arg6</td><td><a href="#">*</a></td><td><p>Sixth argument that is passed from caller.</p></td>
+        </tr>
+        <tr>
+            <td>arg7</td><td><a href="#">*</a></td><td><p>Seventh argument that is passed from caller.</p></td>
+        </tr>
+        <tr>
+            <td>arg8</td><td><a href="#">*</a></td><td><p>Eighth argument that is passed from caller.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="HttpResponse">
+    <h3 class="methodname">HttpResponse <a class="font-icon" href="#HttpResponse">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.Http.html#get">pc.Http#get</a>, <a href="pc.Http.html#post">pc.Http#post</a>, <a href="pc.Http.html#put">pc.Http#put</a>, <a href="pc.Http.html#del">pc.Http#del</a>, and <a href="pc.Http.html#request">pc.Http#request</a>.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>err</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null">null</a></td><td><p>The error code, message, or exception in the case where the request fails.</p></td>
+        </tr>
+        <tr>
+            <td>response</td><td><a href="#">*</a></td><td><p>The response data if no errors were encountered. (format depends on response type: text, Object, ArrayBuffer, XML).</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="LoadAsset">
+    <h3 class="methodname">LoadAsset <a class="font-icon" href="#LoadAsset">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.AssetRegistry.html#loadFromUrl">pc.AssetRegistry#loadFromUrl</a> and called when an asset is loaded (or an error occurs).</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>err</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null">null</a></td><td><p>The error message is null if no errors were encountered.</p></td>
+        </tr>
+        <tr>
+            <td>asset</td><td><a href="pc.Asset.html">pc.Asset</a></td><td><p>The loaded asset if no errors were encountered.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="LoadHierarchy">
+    <h3 class="methodname">LoadHierarchy <a class="font-icon" href="#LoadHierarchy">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.SceneRegistry.html#loadSceneHierarchy">pc.SceneRegistry#loadSceneHierarchy</a>.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>err</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null">null</a></td><td><p>The error message in the case where the loading or parsing fails.</p></td>
+        </tr>
+        <tr>
+            <td>entity</td><td><a href="pc.Entity.html">pc.Entity</a></td><td><p>The loaded root entity if no errors were encountered.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="LoadScene">
+    <h3 class="methodname">LoadScene <a class="font-icon" href="#LoadScene">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.SceneRegistry.html#loadScene">pc.SceneRegistry#loadScene</a>.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>err</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null">null</a></td><td><p>The error message in the case where the loading or parsing fails.</p></td>
+        </tr>
+        <tr>
+            <td>entity</td><td><a href="pc.Entity.html">pc.Entity</a></td><td><p>The loaded root entity if no errors were encountered.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="LoadSettings">
+    <h3 class="methodname">LoadSettings <a class="font-icon" href="#LoadSettings">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.SceneRegistry.html#loadSceneSettings">pc.SceneRegistry#loadSceneSettings</a>.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>err</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null">null</a></td><td><p>The error message in the case where the loading or parsing fails.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="LockMouse">
+    <h3 class="methodname">LockMouse <a class="font-icon" href="#LockMouse">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.Mouse.html#enablePointerLock">pc.Mouse#enablePointerLock</a> and pc.Application#disablePointerLock.</p></p>
+
+</div>
+        <div id="PreloadApp">
+    <h3 class="methodname">PreloadApp <a class="font-icon" href="#PreloadApp">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.Application.html#preload">pc.Application#preload</a> when all assets (marked as 'preload') are loaded.</p></p>
+
+</div>
+        <div id="ResourceHandler">
+    <h3 class="methodname">ResourceHandler <a class="font-icon" href="#ResourceHandler">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.ResourceHandler.html#load">pc.ResourceHandler#load</a> when a resource is loaded (or an error occurs).</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>err</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null">null</a></td><td><p>The error message in the case where the load fails.</p></td>
+        </tr>
+        <tr>
+            <td>response</td><td><a href="#">*</a></td><td><p>The raw data that has been successfully loaded.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="ResourceLoader">
+    <h3 class="methodname">ResourceLoader <a class="font-icon" href="#ResourceLoader">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.ResourceLoader.html#load">pc.ResourceLoader#load</a> when a resource is loaded (or an error occurs).</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>err</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null">null</a></td><td><p>The error message in the case where the load fails.</p></td>
+        </tr>
+        <tr>
+            <td>resource</td><td><a href="#">*</a></td><td><p>The resource that has been successfully loaded.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="UpdateShader">
+    <h3 class="methodname">UpdateShader <a class="font-icon" href="#UpdateShader">&#58216;</a></h3>
+    <p><p>Callback used by pc.StandardMaterial#onUpdateShader.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>options</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></td><td><p>An object with shader generator settings (based on current material and scene properties), that you can change and then return.
+Properties of the object passed into this function are documented in pc.StandardMaterial#onUpdateShader.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="VrCamera">
+    <h3 class="methodname">VrCamera <a class="font-icon" href="#VrCamera">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.CameraComponent.html#enterVr">pc.CameraComponent#enterVr</a> and <a href="pc.CameraComponent.html#exitVr">pc.CameraComponent#exitVr</a>.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>err</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null">null</a></td><td><p>On success it is null on failure it is the error message.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="VrDisplay">
+    <h3 class="methodname">VrDisplay <a class="font-icon" href="#VrDisplay">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.VrDisplay.html#requestPresent">pc.VrDisplay#requestPresent</a> and <a href="pc.VrDisplay.html#exitPresent">pc.VrDisplay#exitPresent</a>.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>err</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null">null</a></td><td><p>The error message if presenting fails, or null if the call succeeds.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="VrFrame">
+    <h3 class="methodname">VrFrame <a class="font-icon" href="#VrFrame">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.VrDisplay.html#requestAnimationFrame">pc.VrDisplay#requestAnimationFrame</a>.</p></p>
+
+</div>
+        <div id="XrError">
+    <h3 class="methodname">XrError <a class="font-icon" href="#XrError">&#58216;</a></h3>
+    <p><p>Callback used by pc.XrManager#endXr and pc.XrManager#startXr.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>err</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null">null</a></td><td><p>The Error object or null if operation was successfull.</p></td>
+        </tr>
+    </table>
+</div>
+        <div id="XrHitTestStart">
+    <h3 class="methodname">XrHitTestStart <a class="font-icon" href="#XrHitTestStart">&#58216;</a></h3>
+    <p><p>Callback used by <a href="pc.XrHitTest.html#start">pc.XrHitTest#start</a> and pc.XrHitTest#startForInputSource.</p></p>
+
+    <h4>Parameters</h4>
+    <table>
+        <tr>
+            <td>err</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null">null</a></td><td><p>The Error object if failed to create hit test source or null.</p></td>
+        </tr>
+        <tr>
+            <td>hitTestSource</td><td><a href="pc.XrHitTestSource.html">pc.XrHitTestSource</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null">null</a></td><td><p>object that provides access to hit results against real world geometry.</p></td>
+        </tr>
+    </table>
+</div>
+
+    <!--static members-->
+
+    <!--static methods-->
+
+
+    <!--properties-->
+
+    <!--methods-->
+
+    <!--events-->
+
+</main>
+        </div>
+
+            </body>
+
+</html>
